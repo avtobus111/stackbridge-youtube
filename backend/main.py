@@ -3,11 +3,18 @@ from sqlalchemy import text
 from .db import engine
 from . import models  # register database models
 from .auth import router as auth_router
+from .videos import router as video_router
+from .social import router as social_router
+from .media import router as media_router, BodyLimitMiddleware
 
 
 def create_app():
     app = FastAPI(title='StackBridge Video API', version='1.0.0', description='YouTube-style video app. Sign in, obtain csrf_token from /api/auth/me, and send X-CSRF-Token for mutations. Media endpoints enforce the same permissions as metadata.')
     app.include_router(auth_router)
+    app.include_router(video_router)
+    app.include_router(social_router)
+    app.include_router(media_router)
+    app.add_middleware(BodyLimitMiddleware)
 
     @app.get('/healthz', tags=['Operations'])
     def health():

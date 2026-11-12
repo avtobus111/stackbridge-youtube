@@ -43,3 +43,23 @@ def login(client, handle='alice', password='correct horse battery'):
     client.headers['X-CSRF-Token'] = r.json()['csrf_token']
     return r.json()['user']
 
+
+def ready_video(client, title='A real video', visibility='public'):
+    r = client.post('/api/videos', json={'title': title, 'visibility': visibility})
+    assert r.status_code == 201, r.text
+    from backend.db import SessionLocal
+    from backend.models import Video
+    from backend.storage import store, bucket
+    vid = r.json()['id']
+    with SessionLocal() as db:
+        video = db.get(Video, vid)
+        video.status = 'ready'
+        video.media_key = f'{vid}/video.mp4'
+        video.thumbnail_key = f'{vid}/thumb.jpg'
+        video.duration = 3.5
+        db.commit()
+    store().put_object(Bucket=bucket(), Key=f'{vid}/video.mp4', Body=b'0123456789', ContentType='video/mp4')
+    store().put_object(Bucket=bucket(), Key=f'{vid}/thumb.jpg', Body=b'jpeg', ContentType='image/jpeg')
+    return r.json()
+
+
