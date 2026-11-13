@@ -7,4 +7,5 @@
 *.mp4 binary
 *.jpg binary
 *.docx binary
+ai/skills/** -text
 
