@@ -45,10 +45,11 @@ services:
   storage:
     image: chrislusf/seaweedfs:4.44
     restart: unless-stopped
-    command: ["server", "-dir=/data", "-ip=storage", "-ip.bind=0.0.0.0", "-s3", "-s3.port=8333", "-s3.port.iceberg=0", "-s3.port.lance=0", "-s3.config=/etc/seaweedfs/s3.json", "-master.volumeSizeLimitMB=1024", "-volume.max=5"]
+    command: ["server", "-dir=/data", "-ip=storage", "-ip.bind=0.0.0.0", "-s3", "-s3.port=8333", "-s3.port.iceberg=0", "-s3.port.lance=0", "-s3.config=/etc/seaweedfs/s3.json", "-master.volumeSizeLimitMB=1024", "-volume.max=0"]
     volumes:
       - object-data:/data
       - ./runtime/s3.json:/etc/seaweedfs/s3.json:ro
+      - ./config/seaweed-master.toml:/etc/seaweedfs/master.toml:ro
     security_opt: [no-new-privileges:true]
     networks: [private]
 
@@ -68,11 +69,11 @@ services:
     depends_on:
       initialize: {condition: service_completed_successfully}
     healthcheck:
-      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/healthz',timeout=4)"]
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/healthz',timeout=10)"]
       interval: 10s
-      timeout: 5s
+      timeout: 20s
       retries: 12
-      start_period: 10s
+      start_period: 30s
 
   worker:
     <<: *app

@@ -36,8 +36,8 @@ if ! docker info >/dev/null 2>&1; then
 fi
 python3 scripts/configure.py
 docker compose config --quiet
-if ! docker compose up -d --build --wait --wait-timeout 240; then
-  docker compose logs --tail 60 initialize web worker
+if ! docker compose up -d --build --wait --wait-timeout 600; then
+  docker compose logs --tail 60 storage db initialize web worker
   exit 1
 fi
 APP_PORT="$(python3 scripts/configure.py --port)"

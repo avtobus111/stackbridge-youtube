@@ -1,0 +1,32 @@
+Selected actual runtime output, 2026-11-13 (Moscow).
+These are test/startup excerpts, not a native AI dialogue or an independent audit.
+Commands, environments, the first transient DB failure and limitations: verification.md.
+
+Native PostgreSQL 18.6 / real FFmpeg, moto S3
+40 passed in 32.88s
+
+Ubuntu Docker / first concurrent test run
+tests-1  | E               psycopg.OperationalError: connection failed: connection to server at "172.19.0.2", port 5432 failed: FATAL:  the database system is not yet accepting connections
+tests-1  | E               sqlalchemy.exc.OperationalError: (psycopg.OperationalError) connection failed: connection to server at "172.19.0.2", port 5432 failed: FATAL:  the database system is not yet accepting connections
+tests-1  | FAILED tests/test_ranges.py::test_invalid_ranges[bytes=-0] - sqlalchemy.exc.O...
+tests-1  | 1 failed, 39 passed in 594.41s (0:09:54)
+
+Ubuntu Docker / isolated full test run
+tests-1  | 40 passed in 242.43s (0:04:02)
+VM_LINUX_40_TESTS_PASSED
+
+Ubuntu Docker / real PostgreSQL + SeaweedFS + FFmpeg worker
+VM_FINAL_APPLICATION_READY
+PASS: real-stack upload, processing, playback/ranges, private grants/revocation, likes/comments, playlist filtering and cleanup
+PASS: signed S3 access works; unsigned object read returns 403
+VM_FINAL_REAL_STACK_PASSED
+
+Ubuntu Docker / empty volumes and repeat startup
+VM_FRESH_APPLICATION_READY
+PASS: real-stack upload, processing, playback/ranges, private grants/revocation, likes/comments, playlist filtering and cleanup
+PASS: signed S3 access works; unsigned object read returns 403
+VM_FRESH_REAL_STACK_PASSED
+PASS: real-stack upload, processing, playback/ranges, private grants/revocation, likes/comments, playlist filtering and cleanup
+PASS: signed S3 access works; unsigned object read returns 403
+VM_FRESH_REPEAT_COUNTS_AND_SECRETS_PASSED
+VM_FRESH_VALIDATION_SUCCESS

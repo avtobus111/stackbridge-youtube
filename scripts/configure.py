@@ -47,6 +47,7 @@ def configure():
             raise RuntimeError(f"{key} must be a real project-local secret of at least 10 characters")
     runtime = ROOT / "runtime"
     runtime.mkdir(exist_ok=True, mode=0o700)
+    os.chmod(runtime, 0o700)
     credentials = {
         "identities": [
             {
@@ -59,7 +60,10 @@ def configure():
     s3_path = runtime / "s3.json"
     with s3_path.open("w", encoding="utf-8") as output:
         json.dump(credentials, output)
-    os.chmod(s3_path, 0o600)
+    # The image drops to its own seaweed UID. A file bind mount must be readable
+    # by that UID; the 0700 host directory still keeps other host users out.
+    # The container mount is read-only and is not published outside Docker.
+    os.chmod(s3_path, 0o644)
     return values
 
 

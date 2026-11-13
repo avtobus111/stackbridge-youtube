@@ -14,3 +14,6 @@
 - Native original contains platform-injected unrelated context/account metadata. User explicitly selected a separate full-original archive for personal review before inclusion in submission. Export script preserves bytes; original excluded from source ZIP until that review.
 - Used/consulted skills snapshotted with content hashes. Global account configuration and tokens are excluded. Working branch remains local; publication/submission are not authorized.
 
+- Task 5 complete: actual Ubuntu Docker installation, real PostgreSQL17/SeaweedFS/FFmpeg startup and smoke; corrected Linux S3 bind permissions, small-disk growth and measured readiness timeouts. Separate empty-volume startup and repeat startup passed, preserving row counts and .env hash. Signed object access works; anonymous GET returns403.
+- Linux full test evidence: first concurrent run39passed/1failed during unexplained test-PostgreSQL child exit/recovery; isolated repeat40passed in242.43s, exit0, no unexpected DB restart. Assertions/app code unchanged between runs; initial failure disclosed in verification.md. Native40passed in32.88s. Selected actual stdout saved in docs/verification-output.txt.
+- Task6: independent review/fixes and skill snapshots complete. Final source archive verification and private original export are the remaining handoff operations. No external publication/submission.

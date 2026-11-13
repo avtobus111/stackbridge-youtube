@@ -15,6 +15,8 @@ jobs:
         run: bash start.sh
       - name: Check real object storage and playback
         run: python3 scripts/smoke.py http://localhost:8000
+      - name: Reject unsigned reads from the real object store
+        run: docker compose exec -T web python - < scripts/check_storage.py
       - name: Record runtime diagnostics
         if: failure()
         run: docker compose logs --tail 150

@@ -1,0 +1,5 @@
+# One logical volume per growth step suits a single-node evaluation stack.
+# The upstream default allocates seven per collection, exhausting small disks
+# before the S3 bucket's separate collection can receive its first object.
+[master.volume_growth]
+copy_1 = 1
