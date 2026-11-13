@@ -28,6 +28,7 @@ COPY --chown=app:app frontend ./frontend
 COPY --chown=app:app assets ./assets
 COPY --chown=app:app migrations ./migrations
 COPY --chown=app:app tests ./tests
+COPY --chown=app:app scripts ./scripts
 COPY --chown=app:app alembic.ini pyproject.toml ./
 USER 10001:10001
 CMD ["python", "-m", "pytest", "-q", "-p", "no:cacheprovider"]

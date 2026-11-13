@@ -30,3 +30,46 @@ PASS: real-stack upload, processing, playback/ranges, private grants/revocation,
 PASS: signed S3 access works; unsigned object read returns 403
 VM_FRESH_REPEAT_COUNTS_AND_SECRETS_PASSED
 VM_FRESH_VALIDATION_SUCCESS
+
+Follow-up after user requested continuation, 2026-11-13.
+
+RED: orphaned probe interrupts a persistent connection
+Container PID 1=postgres; postmaster=1; adopted probe=173
+Orphaned readiness probe exited with status 2
+db-1  | 2026-11-13 06:34:57.822 UTC [1] LOG:  server process (PID 173) exited with exit code 2
+AssertionError: The orphaned readiness probe interrupted PostgreSQL: probe PID=173, probe crash logged=True, witness exit=2; WARNING:  terminating connection because of crash of another server process
+
+GREEN: init separates probe reaping from PostgreSQL
+Container PID 1=docker-init; postmaster=7; adopted probe=196
+Orphaned readiness probe exited with status 2
+PASS: orphaned pg_isready was reaped; the same PostgreSQL connection stayed alive
+DB_REAPING_GREEN
+
+Cleanup fault injection before implementation
+3 failed in 0.20s
+
+Cleanup fault injection after implementation
+3 passed in 0.10s
+
+Final native PostgreSQL suite in the ordinary local test environment
+43 passed in 45.66s
+
+Real app, graceful DB restart and preserved data/secrets
+tests-1  | 40 passed in 315.40s (0:05:15)
+DB_FIX_FULL_TESTS_PASSED
+DB_FIX_APP_INIT_CONFIRMED
+PASS: real-stack upload, processing, playback/ranges, private grants/revocation, likes/comments, playlist filtering and cleanup
+PASS: signed S3 access works; unsigned object read returns 403
+.env: OK
+DB_FIX_GRACEFUL_RESTART_DATA_PRESERVED
+PASS: real-stack upload, processing, playback/ranges, private grants/revocation, likes/comments, playlist filtering and cleanup
+PASS: signed S3 access works; unsigned object read returns 403
+DB_FIX_APPLICATION_AND_STORAGE_PASSED
+
+Final reviewed diagnostic + complete Docker suite
+Container PID 1=docker-init; postmaster=7; adopted probe=194
+Orphaned readiness probe exited with status 2
+PASS: orphaned pg_isready was reaped; the same PostgreSQL connection stayed alive
+DB_REAPING_FINAL_GREEN
+tests-1  | 43 passed in 287.68s (0:04:47)
+DB_FIX_FINAL43_PASSED

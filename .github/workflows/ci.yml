@@ -9,6 +9,8 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
+      - name: Preserve database connections after an orphaned health probe
+        run: python3 scripts/check_db_reaping.py
       - name: Run tests on PostgreSQL and FFmpeg
         run: bash scripts/test.sh
       - name: Start application from empty volumes

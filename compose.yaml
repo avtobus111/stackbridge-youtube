@@ -28,6 +28,8 @@ x-app: &app
 services:
   db:
     image: postgres:17-bookworm
+    # Reap orphaned health probes outside postmaster; exit 2 must not reset the DB.
+    init: true
     restart: unless-stopped
     environment:
       POSTGRES_USER: stackbridge

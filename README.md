@@ -74,6 +74,14 @@ ssh -L 8000:127.0.0.1:8000 user@server
 bash scripts/test.sh
 ```
 
+Отдельная регрессия жизненного цикла PostgreSQL создаёт временный Compose-проект и проверяет сохранение открытого соединения после завершения осиротевшей проверки готовности:
+
+```bash
+python3 scripts/check_db_reaping.py
+```
+
+Механизм и изоляция этой проверки описаны в [database-readiness.md](docs/database-readiness.md). Сверка каждого пункта задания с реализацией и проверками — в [requirements-checklist.md](docs/requirements-checklist.md).
+
 Дополнительная проверка уже запущенного приложения использует настоящие PostgreSQL, S3 и worker:
 
 ```bash

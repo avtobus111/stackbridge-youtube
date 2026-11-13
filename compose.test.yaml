@@ -2,6 +2,8 @@ name: stackbridge-test
 services:
   db:
     image: postgres:17-bookworm
+    # Keep orphaned readiness probes away from PostgreSQL's child reaper.
+    init: true
     environment:
       POSTGRES_USER: tests
       POSTGRES_PASSWORD: tests-local-only
