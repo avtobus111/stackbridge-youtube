@@ -20,7 +20,7 @@ The browser never receives an S3 credential or public object URL. API endpoints 
 
 ## Upload and processing
 
-Create metadata, PUT raw bytes with XMLHttpRequest progress, persist the source to S3 and queue the record. Enforce upload size while receiving bytes and limit request bodies before parsing JSON. Filename is never an object key. The worker claims queued/stale work using FOR UPDATE SKIP LOCKED, stores a lease, validates with ffprobe and creates H.264/AAC MP4 plus thumbnail. Failures are visible to the owner, bounded retries handle transient failures, and an expired lease recovers an interrupted worker. Transcoding only permits local input protocols and has a timeout. Scratch files are temporary.
+Create metadata, PUT raw bytes with XMLHttpRequest progress, persist the source to S3 and queue the record. Enforce upload size while receiving bytes and limit request bodies before parsing JSON. Filename is never an object key. Each receiving attempt owns a lease, refreshes a heartbeat and writes an immutable source key. Only that lease may publish the source or reset a failed upload. The worker claims queued/stale work using FOR UPDATE SKIP LOCKED, stores a lease, validates with ffprobe and creates H.264/AAC MP4 plus thumbnail. Each worker attempt writes immutable output keys; only a lease-conditional database update publishes them. A stale attempt cannot overwrite the current objects and its unpublished outputs are discarded. Failures are visible to the owner, bounded retries handle transient failures, and an expired lease recovers an interrupted worker. Transcoding only permits local input protocols and has a timeout. Scratch files are temporary.
 
 ## Visual direction
 

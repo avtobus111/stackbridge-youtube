@@ -9,4 +9,8 @@
 - Tasks 2–3: complete. 30 tests pass on native PostgreSQL 18.6, moto S3 and real FFmpeg, including private discovery/grants, moderation, social APIs, real transcoding, HTTP ranges, invalid files and lease recovery.
 - Task 4: complete. 34 tests pass with frontend routing/config and repeatable demo seed. Real-stack smoke on PostgreSQL + SeaweedFS + worker passed. Browser Edge scenarios passed: search, signup, upload, worker processing, playback, like, escaped comment, playlist, private grant, mobile and local Swagger; no JavaScript errors.
 - Task 5: deployment configuration and documentation in progress. Runtime code verified on Windows; an actual Docker/clean Ubuntu run remains to be established.
+- Final review: two Important lease races reproduced (three failing tests) and fixed with unique per-attempt S3 keys, receiving heartbeat and conditional completion/cleanup. Complete suite: 37 passed on PostgreSQL after fixes and formatting. No deferred Minor findings.
+- Review boundaries accepted: single-node evaluation rather than production TLS/HA/HLS; moderator private access is explicit. No claim of a production security audit. Clean Ubuntu validation remains owned by this execution, not delegated to the reviewer.
+- Native original contains platform-injected unrelated context/account metadata. User explicitly selected a separate full-original archive for personal review before inclusion in submission. Export script preserves bytes; original excluded from source ZIP until that review.
+- Used/consulted skills snapshotted with content hashes. Global account configuration and tokens are excluded. Working branch remains local; publication/submission are not authorized.
 

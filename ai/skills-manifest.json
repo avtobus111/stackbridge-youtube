@@ -1,0 +1,1554 @@
+[
+  {
+    "skill": "superpowers/using-superpowers",
+    "purpose": "workflow",
+    "source": "plugins/cache/openai-curated-remote/superpowers/7.0.1/skills/using-superpowers",
+    "files": [
+      {
+        "file": "ai/skills/superpowers/using-superpowers/agents/openai.yaml",
+        "sha256": "3c5813a85ca812acc399c3081ab73699dce4740b068ab0be73710a58465bfeaa"
+      },
+      {
+        "file": "ai/skills/superpowers/using-superpowers/references/antigravity-tools.md",
+        "sha256": "4880f6de3da4e32f9659ebe7a72b9e0ebfff04e028c2ed96173f86d0387a04c0"
+      },
+      {
+        "file": "ai/skills/superpowers/using-superpowers/references/claude-code-tools.md",
+        "sha256": "21479a3fee27448cab8748a3b5687e53bb257883bda9c070426f9a1ab5cebf1b"
+      },
+      {
+        "file": "ai/skills/superpowers/using-superpowers/references/codex-tools.md",
+        "sha256": "1a38ad9b188c393052f58d95657a1c35ea6aafc8b5a27f198f3922912f70bbe7"
+      },
+      {
+        "file": "ai/skills/superpowers/using-superpowers/references/gemini-tools.md",
+        "sha256": "62b9157bcb0ee3c6784e3d0da0798ddfa5872f9e0c34bea48f3079dabea71965"
+      },
+      {
+        "file": "ai/skills/superpowers/using-superpowers/references/hermes-tools.md",
+        "sha256": "e2185c976a3c87503910e05e2aea58cc89bc8e569bb624b93df9958ac47a9190"
+      },
+      {
+        "file": "ai/skills/superpowers/using-superpowers/references/muse-tools.md",
+        "sha256": "5a1da5c575fe18456ca71cd47ebfd8a38c745f8d82a67fe64d5b83080000eeb3"
+      },
+      {
+        "file": "ai/skills/superpowers/using-superpowers/references/pi-tools.md",
+        "sha256": "703dbc83d23ecab9c6f388460c38abc482e9dee2fe6772a8c7a255152ad3a4d5"
+      },
+      {
+        "file": "ai/skills/superpowers/using-superpowers/SKILL.md",
+        "sha256": "82c5c8866ad7f5dd4440ce66bd7806ba48a2f13771beae5cf112e53f08fe36ba"
+      }
+    ]
+  },
+  {
+    "skill": "superpowers/brainstorming",
+    "purpose": "workflow",
+    "source": "plugins/cache/openai-curated-remote/superpowers/7.0.1/skills/brainstorming",
+    "files": [
+      {
+        "file": "ai/skills/superpowers/brainstorming/agents/openai.yaml",
+        "sha256": "90585d2a09289aaff7eba1271596e8500c7328437b94839f2d39699a41689195"
+      },
+      {
+        "file": "ai/skills/superpowers/brainstorming/builder-check-prompt.md",
+        "sha256": "36d51a4723d6f0a3ce5811a0ea3b3a8424f07533947e1355f5d8cb8cce40c55e"
+      },
+      {
+        "file": "ai/skills/superpowers/brainstorming/scripts/frame-template.html",
+        "sha256": "6a8a4e58bd6a44b904e2e3c57de774481d909204597e1498de53f1b2fecc4c4e"
+      },
+      {
+        "file": "ai/skills/superpowers/brainstorming/scripts/helper.js",
+        "sha256": "43c6d69954a46ec34a2a262bcc62a9a7e83e839c739f199cb72646d397c686e3"
+      },
+      {
+        "file": "ai/skills/superpowers/brainstorming/scripts/server.cjs",
+        "sha256": "763abf96510e0b892a1141397b31aa82ef900cf87ed34dde94bc8782baf4a7ca"
+      },
+      {
+        "file": "ai/skills/superpowers/brainstorming/scripts/start-server.sh",
+        "sha256": "a4e5ae84275bcaacd2f84345afeabe59cf7b00ba080e123da7cc1fb226f12847"
+      },
+      {
+        "file": "ai/skills/superpowers/brainstorming/scripts/stop-server.sh",
+        "sha256": "0b5ccbbd57f62d3ed88993f7940b5ee0e5c0fc9b21c550c623da4f6292e47daf"
+      },
+      {
+        "file": "ai/skills/superpowers/brainstorming/SKILL.md",
+        "sha256": "61a7ef918652108c76a3fd01e02dd92d39996c6b46d4cb2819cbd03f6c45e46a"
+      },
+      {
+        "file": "ai/skills/superpowers/brainstorming/visual-companion.md",
+        "sha256": "6ffcb038b53254bd31debaa15e12dcd4ff24bd63d690e0b644ac6396701cf2e2"
+      }
+    ]
+  },
+  {
+    "skill": "superpowers/writing-plans",
+    "purpose": "workflow",
+    "source": "plugins/cache/openai-curated-remote/superpowers/7.0.1/skills/writing-plans",
+    "files": [
+      {
+        "file": "ai/skills/superpowers/writing-plans/agents/openai.yaml",
+        "sha256": "de6a2f3d9de78d9c5027512ab1abab998f9acbef70960ecdbad525f4dce2e1bb"
+      },
+      {
+        "file": "ai/skills/superpowers/writing-plans/SKILL.md",
+        "sha256": "a6c67c1900064347c2a329990dd3c555657c51c3ec53b259a08aa01a2c26139a"
+      }
+    ]
+  },
+  {
+    "skill": "superpowers/using-git-worktrees",
+    "purpose": "workflow",
+    "source": "plugins/cache/openai-curated-remote/superpowers/7.0.1/skills/using-git-worktrees",
+    "files": [
+      {
+        "file": "ai/skills/superpowers/using-git-worktrees/agents/openai.yaml",
+        "sha256": "00bb3e4d6f3448a0c406d3bffc714d5ed597248514646c2f13ef532b93041773"
+      },
+      {
+        "file": "ai/skills/superpowers/using-git-worktrees/SKILL.md",
+        "sha256": "8cfb86f121269e8f7f12361e6795c4f6738828340e28964c9229d365666c9edd"
+      }
+    ]
+  },
+  {
+    "skill": "superpowers/test-driven-development",
+    "purpose": "workflow",
+    "source": "plugins/cache/openai-curated-remote/superpowers/7.0.1/skills/test-driven-development",
+    "files": [
+      {
+        "file": "ai/skills/superpowers/test-driven-development/agents/openai.yaml",
+        "sha256": "d1fd223b137ce6eca628d521031213a2dc002a97865f00e2f6fce03529b9ca05"
+      },
+      {
+        "file": "ai/skills/superpowers/test-driven-development/SKILL.md",
+        "sha256": "64b03fce4aee5a97a93160cea8111f3ba13a17b7c001db4bd5836d67fd10705d"
+      },
+      {
+        "file": "ai/skills/superpowers/test-driven-development/writing-good-tests.md",
+        "sha256": "51471c853306ff92ca8bb41dcaea05f31c0e46b03651f8f3c99754b7172f4ae1"
+      }
+    ]
+  },
+  {
+    "skill": "superpowers/executing-plans",
+    "purpose": "workflow",
+    "source": "plugins/cache/openai-curated-remote/superpowers/7.0.1/skills/executing-plans",
+    "files": [
+      {
+        "file": "ai/skills/superpowers/executing-plans/agents/openai.yaml",
+        "sha256": "c9884a11c9c4721b838ad0b526590efdf677065fb20af0ac3b2bd2ea55cf8786"
+      },
+      {
+        "file": "ai/skills/superpowers/executing-plans/scripts/task-done",
+        "sha256": "d0d4f2397c85a4426443ea955e699ef12568b41b408ec6122d4ec2433ee3a5f6"
+      },
+      {
+        "file": "ai/skills/superpowers/executing-plans/scripts/task-start",
+        "sha256": "f833693c8fce3700fc9f841562d80f8015cd40f652c168a3405ac3e46947a1fe"
+      },
+      {
+        "file": "ai/skills/superpowers/executing-plans/SKILL.md",
+        "sha256": "e4649e59880ef2643d1da128e3d607e87e3f969410d72095a5bf65811b6036dc"
+      }
+    ]
+  },
+  {
+    "skill": "superpowers/systematic-debugging",
+    "purpose": "workflow",
+    "source": "plugins/cache/openai-curated-remote/superpowers/7.0.1/skills/systematic-debugging",
+    "files": [
+      {
+        "file": "ai/skills/superpowers/systematic-debugging/agents/openai.yaml",
+        "sha256": "a1ec2b63eb6ac4f79bdea5e0ac4dd9688ead473dbc0ff8aa791f9142778b5386"
+      },
+      {
+        "file": "ai/skills/superpowers/systematic-debugging/condition-based-waiting-example.ts",
+        "sha256": "40ae5ebe497fdf310200e43fe986552546d0a22837c0d39e855db1cfd33eb88e"
+      },
+      {
+        "file": "ai/skills/superpowers/systematic-debugging/condition-based-waiting.md",
+        "sha256": "e89fec8400d6cd50f43407cec9fab50976ba4d55d0ec2eb51c0bd68036b54c26"
+      },
+      {
+        "file": "ai/skills/superpowers/systematic-debugging/CREATION-LOG.md",
+        "sha256": "c24733a5b1821bd6bed1fc950261f0b9f4e90097e0bbb96459d8179713730789"
+      },
+      {
+        "file": "ai/skills/superpowers/systematic-debugging/defense-in-depth.md",
+        "sha256": "1e175fb86fc357e58c6aebf5441e481e1b7868b4380c0456b63a17eefbd18ba7"
+      },
+      {
+        "file": "ai/skills/superpowers/systematic-debugging/find-polluter.sh",
+        "sha256": "dd7b8f13c4cc2a24b33ff87b18da9248f3e1c80a085c3316224f69ff0fa5c43c"
+      },
+      {
+        "file": "ai/skills/superpowers/systematic-debugging/root-cause-tracing.md",
+        "sha256": "75b933b6a8c40bdb2031b10f21654395b56ec6ab6bc7b018c18d3fe57aeb7fb8"
+      },
+      {
+        "file": "ai/skills/superpowers/systematic-debugging/SKILL.md",
+        "sha256": "51c6435d98c83c42c96ba7c35725a0b2c376cd487fb1a4e6bd0ddbe7e33ef202"
+      },
+      {
+        "file": "ai/skills/superpowers/systematic-debugging/test-academic.md",
+        "sha256": "fe2ba480d78ac0d686dc025f41c2a32a43d642bf533f91b0c6053a04d35d6486"
+      },
+      {
+        "file": "ai/skills/superpowers/systematic-debugging/test-pressure-1.md",
+        "sha256": "0b6a915db0054577819834c79be9eb614e97bddba10d73768e1fbe91cfed048a"
+      },
+      {
+        "file": "ai/skills/superpowers/systematic-debugging/test-pressure-2.md",
+        "sha256": "b2030aeffba07050e8ad573ddf87486457c4a016a786bb326235bebd856f2016"
+      },
+      {
+        "file": "ai/skills/superpowers/systematic-debugging/test-pressure-3.md",
+        "sha256": "96b50a52e2c7989c9cf20fb752c47c1e9a3a70dc362f8f7989f8f5b64dac7708"
+      }
+    ]
+  },
+  {
+    "skill": "superpowers/requesting-code-review",
+    "purpose": "workflow",
+    "source": "plugins/cache/openai-curated-remote/superpowers/7.0.1/skills/requesting-code-review",
+    "files": [
+      {
+        "file": "ai/skills/superpowers/requesting-code-review/agents/openai.yaml",
+        "sha256": "1917e3cf2c957e7512343e622b002a873f325fbf931bed77d71afb5a02ca431d"
+      },
+      {
+        "file": "ai/skills/superpowers/requesting-code-review/code-reviewer.md",
+        "sha256": "82e370be6b3447523816286195571e4216ba56ba1ad6ad0e87862294c4c78dcb"
+      },
+      {
+        "file": "ai/skills/superpowers/requesting-code-review/SKILL.md",
+        "sha256": "2180e14a448e9410bec88e6646a2d1f0ce7fdd58de27388c1e052e929679d2bc"
+      }
+    ]
+  },
+  {
+    "skill": "superpowers/receiving-code-review",
+    "purpose": "workflow",
+    "source": "plugins/cache/openai-curated-remote/superpowers/7.0.1/skills/receiving-code-review",
+    "files": [
+      {
+        "file": "ai/skills/superpowers/receiving-code-review/agents/openai.yaml",
+        "sha256": "f5515fdf668d22fffc4fd367f990318b2c1ba1a73d9b3ba5661c40e02deedfbc"
+      },
+      {
+        "file": "ai/skills/superpowers/receiving-code-review/SKILL.md",
+        "sha256": "091df1629510af1b92fc4abd6f96732ebedb4cb2c0f3457e8f2740b0504a2438"
+      }
+    ]
+  },
+  {
+    "skill": "superpowers/verification-before-completion",
+    "purpose": "workflow",
+    "source": "plugins/cache/openai-curated-remote/superpowers/7.0.1/skills/verification-before-completion",
+    "files": [
+      {
+        "file": "ai/skills/superpowers/verification-before-completion/agents/openai.yaml",
+        "sha256": "0eaad1a982ab8c95d8b938f1567f207dbc6fd9d172707b1e268e0cc8ab999705"
+      },
+      {
+        "file": "ai/skills/superpowers/verification-before-completion/SKILL.md",
+        "sha256": "2befe7fc55bcadaa3d97dd9e8efeb633d2561c0ebe74c5a8b17c4d9e7e4520b3"
+      }
+    ]
+  },
+  {
+    "skill": "superpowers/finishing-a-development-branch",
+    "purpose": "workflow",
+    "source": "plugins/cache/openai-curated-remote/superpowers/7.0.1/skills/finishing-a-development-branch",
+    "files": [
+      {
+        "file": "ai/skills/superpowers/finishing-a-development-branch/agents/openai.yaml",
+        "sha256": "74ab618a66f23e8e29015f4ab14db2dd0f639e98c6fdc25fb912fb6a82ed593d"
+      },
+      {
+        "file": "ai/skills/superpowers/finishing-a-development-branch/SKILL.md",
+        "sha256": "8db5a922b242dd4e1bf824cb91c13b3e8d8e8a86d6ceaf7f0774eb9cce909d65"
+      }
+    ]
+  },
+  {
+    "skill": "frontend-design",
+    "purpose": "frontend implementation",
+    "source": "skills/frontend-design",
+    "files": [
+      {
+        "file": "ai/skills/frontend-design/LICENSE.txt",
+        "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+      },
+      {
+        "file": "ai/skills/frontend-design/SKILL.md",
+        "sha256": "1608ea77fbb6fc30d13a97d12cfa8ebf31358d40f0dd97beed24829d6b3f45dd"
+      }
+    ]
+  },
+  {
+    "skill": "sites",
+    "purpose": "local-only workflow",
+    "source": "plugins/cache/openai-curated-remote/sites/1.1.6/skills/sites",
+    "files": [
+      {
+        "file": "ai/skills/sites/agents/openai.yaml",
+        "sha256": "bc8d5487d5f8ac41ff8af079d569f46f00120a9cdac4c1aa30d8fa7df868ba34"
+      },
+      {
+        "file": "ai/skills/sites/references/app-integrations.md",
+        "sha256": "a80725b71e0e3308fa0827e21d6a3c9428d43685579d059a47091c376c91c220"
+      },
+      {
+        "file": "ai/skills/sites/references/browser-agent-support.md",
+        "sha256": "02aed5c7077d24745de1aefba14039873acb6a3920a82af4c3a8cde5fe1c8c7e"
+      },
+      {
+        "file": "ai/skills/sites/references/design/presentation-led.md",
+        "sha256": "e5ba3863c71d0397e90d7adee8424eb37feb10aab0245f46c3934f7f1cd2c00f"
+      },
+      {
+        "file": "ai/skills/sites/references/identity-and-secrets.md",
+        "sha256": "0ade4af1dad4cef94ba104781bfdbd466a26f6a0227d366ec02c6447453d108f"
+      },
+      {
+        "file": "ai/skills/sites/references/preview/local.md",
+        "sha256": "63534bdbc795f590707374c4484d7d13a0c2dd758df8179058cc78b9a20fd720"
+      },
+      {
+        "file": "ai/skills/sites/references/preview/managed.md",
+        "sha256": "5edbe06d3dd94872bc4ea352ba4ae295dd4138ec063af01c4b412f18b2db4cb0"
+      },
+      {
+        "file": "ai/skills/sites/references/recurring-updates.md",
+        "sha256": "08bd1618634109053e1316519a220c14b06333ff04acd2334e12f42f8ea00b01"
+      },
+      {
+        "file": "ai/skills/sites/references/site-mcp-server.md",
+        "sha256": "b1d304a65d7cdffab4a0b2234cebcddd44c6af52a84f8ee9ca360b1b2403999e"
+      },
+      {
+        "file": "ai/skills/sites/references/storage.md",
+        "sha256": "608efea142e68b80e88a466bd4b1523a19c6c4c74af6662aff9718caa605ce16"
+      },
+      {
+        "file": "ai/skills/sites/references/troubleshooting.md",
+        "sha256": "419f31d19da7541b46009788464916bae6bff9bc9b197ba9240ab79e5808f8ea"
+      },
+      {
+        "file": "ai/skills/sites/scripts/prepare-site-build.cjs",
+        "sha256": "32496143dcc6f7e7c5410444e319469e2525c1d2eda0d2ed7c65e7c67995dbe3"
+      },
+      {
+        "file": "ai/skills/sites/SKILL.md",
+        "sha256": "e203320d1810d204b82f770288e08f232c3c87de416b234c11ad1694aaedb554"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/.gitignore",
+        "sha256": "5ca3c39bdc1288c108a1931b3f6bc5795464b6253e9457390617774259deed0c"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/.npmrc",
+        "sha256": "a3909ac0447c469fda12c57374993be70f47ce73e49fd3124678c7c047f2214d"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/.openai/hosting.json",
+        "sha256": "d532abb65cf9ae20634b464d954cb4a08a0de9f3cd3cdf7f9c3ec8948826d947"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/app/chatgpt-auth.ts",
+        "sha256": "4265a2e7c2dcb3a6f4b7026f762bf5b6e4caec76cc13c0a45987ee9a9f2e42cc"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/app/globals.css",
+        "sha256": "8546d9b115f0addd582f7ceaaa6b1c069310bcc77c43ee7b8acfe0020be3afd7"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/app/layout.tsx",
+        "sha256": "fb20da0ae67bb49128afe28c32dba4ff1588e70d6c913a64ef8a0b95f94d63da"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/app/page.tsx",
+        "sha256": "c2293d77b0cff0d149cc153eae96eb6f807f0967b12a177b387f8d9b695f6d7f"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/cloudflare-env.d.ts",
+        "sha256": "8b0eca84aa3364cc7ccc43cc3af6beb88dd34ebd410de08690bf094ce39fbcb0"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/connector-error.tsx",
+        "sha256": "2d0d04559952ce9c9a327cca499f4b99f35d885cccfce375230e116695d3f155"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/accordion.tsx",
+        "sha256": "a4f153089ba886dfcf73fac26b5c01ca933fa12fbe88df6fb723912bfffdfbb0"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/alert-dialog.tsx",
+        "sha256": "9a8d950f2b9b4352d5ebb762fb44d5c28c2d353aa29712071973656a8736e311"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/alert.tsx",
+        "sha256": "2cc59b5f7bda91c1670884b1bf46bfc8a2a6f226cef184f5762acc037188885b"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/aspect-ratio.tsx",
+        "sha256": "b1c157886236782cb92d8fbcd4749532aaf6d8aabefd6e157ca40358f902f407"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/attachment.tsx",
+        "sha256": "ae8a25dd1a896d3964e3ef54d97e51221b418cde287dfd794428b89951c5c790"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/avatar.tsx",
+        "sha256": "58a846bf1617b94b9681921db9b8461d0145f311424663d11678a06b6153cb34"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/badge.tsx",
+        "sha256": "46a0de5224f6a5d5d63d45246534288518dce888f031064bff925bbc7fe6ad97"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/breadcrumb.tsx",
+        "sha256": "d4c0831bba2212e778248f54a6ace6ef378df8bba4616d1abf27787a31eabae5"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/bubble.tsx",
+        "sha256": "870cc0c5cfc8a515053f7e41e706a6bd017a909b45f1305fd3b164a52cc4483b"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/button-group.tsx",
+        "sha256": "784c89d8ee683e1bc972ae69e6ea8225a7f63abe22aa1b5fc3423ae8a2a399c0"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/button.tsx",
+        "sha256": "cc36af0f8b5019c33cc039fbf03bb952a513072b15b55b53c592b78af3e5f4c4"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/calendar.tsx",
+        "sha256": "3855fbe0d3f8ad3a4b93071f98b76a9f6782d46ec8b05f5d2ddbee1e4e39bc84"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/card.tsx",
+        "sha256": "c48dd3b96be90a7066f1aebf294f0af9d00ebcdc367d5d4aca55429ade570c1c"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/carousel.tsx",
+        "sha256": "b7ea0dda3903d972c186f739e23da61f547bc83b5a0bf13b16856577846d5fc3"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/chart.tsx",
+        "sha256": "45aa5ea4a386f4fb5b8869ff4bab3a08cf89255190ee322043baf84c3e950b6a"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/checkbox.tsx",
+        "sha256": "b23ab9d4deeedf2ac8f512c368361ede681aa383437ef48563a6f9b7dbe95f27"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/collapsible.tsx",
+        "sha256": "c6598e5584f4258b5d9fefadbc5ad6a66888ad58729f4b634a0bb2d9c513188b"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/combobox.tsx",
+        "sha256": "2d68e78b2dc7e38a085f222dede60a80b4f8229a6e91732c484605e204d46735"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/command.tsx",
+        "sha256": "361193df1e3d64a9e9b5048f045264782fcb387aab3f00f2b805fdcbf538b16a"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/context-menu.tsx",
+        "sha256": "2cf1fcf59df0649a3e2a126d1df2f639145f6b6bf5689ee54af1f40ab1245017"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/dialog.tsx",
+        "sha256": "dce39c6adc47d997bd2567f8b7a72f466b0134715105cd42f9194007b8ecdb14"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/direction.tsx",
+        "sha256": "84ae2ad658207f0e0f367978e5508cd8027cd00c29c41d3d13db21a708c3d1e6"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/drawer.tsx",
+        "sha256": "cb6eaf58eb0757ca91af284e5d925b89a42ad7eb19cb3f44c575a3487aa9350f"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/dropdown-menu.tsx",
+        "sha256": "98f0dcdae38225b73734aceeb9213dd751fea2c72ea520df31003cd133deac8a"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/empty.tsx",
+        "sha256": "ae95bdcf367a076ae02e7925f14522a148798f72d9651749c6d55497dba584c0"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/field.tsx",
+        "sha256": "ba67d76f017ac059fc86cf8c344e0b2991c4322d3619e125498c19b87f6eefbd"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/form.tsx",
+        "sha256": "315b46bb75ab7d1c6061b5d750aa4bedf6e7a455e15e2d7f9182f053d5972b1e"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/hover-card.tsx",
+        "sha256": "f5d8df42c59370ec14d61bcc54f7d68e9bb7dfa0d6a872b2f7cffc2aafbf23b8"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/input-group.tsx",
+        "sha256": "6afbd58fea4c438e6252dc4568bddc122e84ababead4ad5cee50ace01100c9a0"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/input-otp.tsx",
+        "sha256": "161946daa89f0eda2575b9271c0494e35807c4ffb55598a49f67160c17fec299"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/input.tsx",
+        "sha256": "8c4612a7c41319ac5049daa3b34b080f9784b6245c17780eb87c127e58e473db"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/item.tsx",
+        "sha256": "6e2144d6d87142dbbe56d568810bf546318c8aa661447ebb0d76ebbf382cb45f"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/kbd.tsx",
+        "sha256": "6088c3a5432338b1719c17e9b5d0e1fa74fd1f66060f248fc88909d33a82cd13"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/label.tsx",
+        "sha256": "a476e41f08b9de5bd447de66a33d8bc2ad18f2fa6b96c064778bab4b6f439f4c"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/marker.tsx",
+        "sha256": "3d798763f094b2bb5e7ade2d5cd1b9bab498bc8ca7fd4cfaf4e5835bdedc34a0"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/menubar.tsx",
+        "sha256": "9243af8afcea03703398ccd1c2a8c0a87ad6cbaf2bd272fb609f5b79fe46aebb"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/message-scroller.tsx",
+        "sha256": "bb7660a248e4e9589c3816c7c1c199ea1381a70d2c8476ae895b567a7a4d86cf"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/message.tsx",
+        "sha256": "9d2952bf3b641081f09aa2739535e6bbd1be0a4946789752a2c20d8aaef43185"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/native-select.tsx",
+        "sha256": "007516b111fca8c98a6c40c94ab91bb68cc5b52afce1ed1f5e510c3d86e7347c"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/navigation-menu.tsx",
+        "sha256": "889d358a77de88e9cb6f39ea4895ea4c76eaf01d731b74e44f1c41e97a78a044"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/pagination.tsx",
+        "sha256": "374ad135c3d4ff3ec080a0009cd9745cdd0e12faa89d2b0e86074f11e5127fd1"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/popover.tsx",
+        "sha256": "31c350309ff5d3034e6ecf1b0eda75ba8855bdbf987fc7ad6d71f0ef07c5a447"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/progress.tsx",
+        "sha256": "c8c26e8f5f041c3cdf4915347dc1d9c022f9448f149990fadcaf303e952fa57d"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/radio-group.tsx",
+        "sha256": "fe5ce39636d0818c2bf9c4eebddff893d1225fa2c81b5fa4bb8cbb39a8c913ce"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/resizable.tsx",
+        "sha256": "bc63958467aa00557c551bb0d96a5ae4c965c1e1ba2380e595949d933b132f7c"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/scroll-area.tsx",
+        "sha256": "8bd9d986b2844c9a87de825c6de4787b6739b36c3dc9a05ccf3eb107160e4043"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/select.tsx",
+        "sha256": "0b796a108a4eb5ba52d9ad938b7aea36dc56ae66c703a6d0a23dbc24f96daff3"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/separator.tsx",
+        "sha256": "6da346505c8629a4668420d2a5ca48891383bbe0b0ceb14163537c671879427e"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/sheet.tsx",
+        "sha256": "63863cf2df8f8973e52b3459ac9bdbf81be1262dbc70eb53d5271ffb03488e16"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/sidebar.tsx",
+        "sha256": "4a8d73e7730a2b1fcecfca31299ed26db65c2307b84197a59c6ec7c01c7ad28e"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/skeleton.tsx",
+        "sha256": "ba48dd5be5a6a1378bd4e011028654b5bf419f1e7d20ee4b9f8330c1264e7239"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/slider.tsx",
+        "sha256": "0e37484f4b416e79ac18c655cac961aefacf6e67085cfc2b320ea8af545635a3"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/sonner.tsx",
+        "sha256": "13ccc9b0fe4248e622f83a1d3b2f0566b72b5e04162d7d0c8db8945ecc71b55f"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/spinner.tsx",
+        "sha256": "3e6e6e8d37fb4069f8e43e55318f8db06fbc36e6c8be0096da3c9337c1c798b9"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/switch.tsx",
+        "sha256": "386d4d4deb39f34126f9700fe9bf5393d238485dd94018bba9d154dda84c62ae"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/table.tsx",
+        "sha256": "20e5a7f224959c6b75802995706a97e9da171f693d4b6b1b436388fcd9df96f3"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/tabs.tsx",
+        "sha256": "865d0194331b9b2be36723fa79d3575dc83078b4cb941cafee87cb72fc2cff46"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/textarea.tsx",
+        "sha256": "253cdeb487c73beaaccdf47fc163e36e7d5b7ae6ddf09a4f64998a109a112979"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/toggle-group.tsx",
+        "sha256": "69f643e889e933f05c1439084480d8646f66a161c7d1cf0730ee926382ade35e"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/toggle.tsx",
+        "sha256": "ba4d0b0a2b2fee75dc36dfc19e32082e721024b919050c97fd5dc70faa924e16"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components/ui/tooltip.tsx",
+        "sha256": "a0784eb77831a799fad7991df4f1b666f876201565a80175e1aa68733574a2e4"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/components.json",
+        "sha256": "31f4ca67a4a62572571003d3d5aac85ee6fbfca67a192924bac6b168d95e98fd"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/db/index.ts",
+        "sha256": "dc7610b00b918e0ffff1360a63626f16655ced3064b2eaf96095a4101fb14bcd"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/db/schema.ts",
+        "sha256": "13ddacbf0be50e054d450a6c642b7fdc1aa943fd6b99084711e07e58b600390d"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/drizzle/meta/_journal.json",
+        "sha256": "90cb374e093894d0efce6f1830d873a42aadd8ba49d2f024495e5cb2e1c8c303"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/drizzle.config.ts",
+        "sha256": "af081f7384aaeb0082cf422e29f139d137ca2f6a57c69b2c37b9fb1f8479867b"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/eslint.config.mjs",
+        "sha256": "eeda7faabe9560fa9fdb26675b0011fa78461ca7061989732f5da9245b87e315"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/examples/d1/app/api/notes/route.ts",
+        "sha256": "a3d4a74fd53b7bf53e2df41f169d9d9d44a8b22aeb6d92f4e754956079af8909"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/examples/d1/db/schema.ts",
+        "sha256": "d89eabd95716ce404f5f7ca2a254220435be8ddce7c899d7ef461ff22ec80454"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/hooks/use-mobile.ts",
+        "sha256": "ad0936f84f1df79d3697bfbff9c18f8ad58431c1cbaf2359c6a853b0fcc9f28b"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/lib/connector-context.ts",
+        "sha256": "bbddff68689cb0f6926fecd4b8b96f12f2054277c296e97b0df07d4ad5ece24e"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/lib/connector-contract.mts",
+        "sha256": "e1a7b24a8793af34b595690d9b1300c897c7321c14f215cedf58ad95799d7c3e"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/lib/connector-errors.mts",
+        "sha256": "a22edf13d6873ae832c4a2a0d579fc666c73ec996ef0722d39172649d38f0871"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/lib/connector-preview.d.ts",
+        "sha256": "abd69a94f7f61f1359063bb557574faae35e8ff5a028cc4c04b9ee248ef52642"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/lib/connectors.ts",
+        "sha256": "1c93d747e384c8e17e3e3dd5361b24412babf5eba2a11d2ae7a75f4e0924112c"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/lib/utils.ts",
+        "sha256": "53f3d3d070f0a9082934da25b875f9499855c2b0693868dd28be8c23d8730f68"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/next.config.ts",
+        "sha256": "614bce25b089c3f19b1e17a6346c74b858034040154c6621e7d35303004767cc"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/package-lock.json",
+        "sha256": "eedaeab6870c0f70f9db869fcaa24abae9b0f945cbc9acb8a43b6e7ed6bcbfca"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/package.json",
+        "sha256": "eb7b53ec5bdce1db5a8576b2ffc3b63ddd8c5fdee0f97dcb341674abbf69843a"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/postcss.config.mjs",
+        "sha256": "dfac7ac2d86d326a0e5adb024e7943c181393ed17a5fcb8f0315b24c7da6ddde"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/public/favicon.svg",
+        "sha256": "e6d2e59b7b5bbb0342e0fb496dfc262decbfe4426bbb7b047aec8d467d1dc6f7"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/README.md",
+        "sha256": "6a8169063d2b024fcbe791837621e0f2bd9863968b5d654d2a0975e76e2ad7f8"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/scripts/build-verified.sh",
+        "sha256": "2ae5329ac860076070c9217a43106a15cb5ecf907a0f7baeb9ef903f76b53c68"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/scripts/connector-preview/connector-preview-session.mjs",
+        "sha256": "57224ad185a25115a14fccc68d3217e55b199260c3dd98a2c807beffec1a0a9b"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/scripts/connector-preview/host-binding.mjs",
+        "sha256": "9e44ab6864133a5c82f834a5904ebb7d6104cb783c24efba3c0fe1a161182cea"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/scripts/connector-preview/protocol.mjs",
+        "sha256": "111e062ebf08d3f180130f5bc3dcb3c1414c1d7be3c032c9d675a61c0c7513a8"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/scripts/connector-preview/worker.mjs",
+        "sha256": "bd9c98fc68f29d975fe10508dfc9029bb681dc5789a62861d5c938bdea2064bb"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/scripts/execution-profile.mjs",
+        "sha256": "2e71116f4d2b70cff8bb70436f8dd5c709ec7ff62893424530f404e0193d3630"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/scripts/install-ci.mjs",
+        "sha256": "4a5a92d60a08d0ba54effd8373da2da06284312c55b767287c68a0bec7200da7"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/scripts/install-ci.sh",
+        "sha256": "10d8764a61be50351dc3496e13588270de7956f0aa5f1189c49cabb2d89fe5c0"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/scripts/install-pnpm.sh",
+        "sha256": "a684c02c2b493dfbf262a66252a5cd36f81ca995a4024761728662ae63aa40c0"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/scripts/npm-install.mjs",
+        "sha256": "9715c6a32d1d4a0289ef6376a0e819c3b6a6416b8a9877733d9fb4339ce626b6"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/scripts/pnpm-install.mjs",
+        "sha256": "a83164e344c1947053def83b546be8115deaa827314bbaead7afe6b6451c5cdf"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/scripts/run-framework.mjs",
+        "sha256": "9bf9f41a29314cabe0238b8e9c540ec3f7b5a6adafc7c8fb6c3940722d061dca"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/scripts/sites-env.mjs",
+        "sha256": "21d7bde6acb9f716287e652c1b0e43ae4803d79be367ca2192fcba14740b5338"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/scripts/sites-env.sh",
+        "sha256": "d18af7b222db748c9de257d5955b9d7f77ec350dab6321f114f0bc44c20388ac"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/scripts/tool-environment.mjs",
+        "sha256": "6da99286e0eb7905595ca851e68983bedf94a0f93814819d61f2b1f3a0342ba2"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/scripts/vite/connector-preview-plugin.mjs",
+        "sha256": "a6a9fe2086e302f94a3f91e3c1a68a45bb3aa07d4a79faf01b14732191eb4e80"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/scripts/vite/sites-vite-plugin.LICENSE",
+        "sha256": "7de1e115d165f176e68f962acdb809b5ab8d8ae78d3981e0701392b2ac50c713"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/scripts/vite/sites-vite-plugin.ts",
+        "sha256": "07af20e7097d9ed1d76f7c446d02997550b8fc5ca89668b249e25eabd62c6834"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/tsconfig.json",
+        "sha256": "a4c1cc83b63ef9d39641d3babaefffa063dccbbc93338e18017b5013d713163e"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/vendor/shadcn-tailwind-4.13.0.css",
+        "sha256": "bc7d83425702955b4cb67cb14ede9d603f9d912376d57a2d81d661094d2a782a"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/vendor/shadcn-tailwind-4.13.0.LICENSE.md",
+        "sha256": "1564074e13439397221ffd522e2e504d56561994a23d371aa5e3ad43e4f5423f"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/vite.config.ts",
+        "sha256": "22ff558b1636d251e076f74c1697c7166079861667af10922d6bc505cb8f8290"
+      },
+      {
+        "file": "ai/skills/sites/templates/vinext-starter/worker/index.ts",
+        "sha256": "a0a10229cdda6f5fdb32234e3539007412233bb4938a671866c9295a44a3bdb6"
+      },
+      {
+        "file": "ai/skills/sites/templates/worker-esm-starter/.gitignore",
+        "sha256": "d0fc69648a6324ef66f032712b68ae1f0f24a2a954daa8308da38a45c6a6057b"
+      },
+      {
+        "file": "ai/skills/sites/templates/worker-esm-starter/.openai/hosting.json",
+        "sha256": "d532abb65cf9ae20634b464d954cb4a08a0de9f3cd3cdf7f9c3ec8948826d947"
+      },
+      {
+        "file": "ai/skills/sites/templates/worker-esm-starter/package.json",
+        "sha256": "5314513e9a77e1bf5602ae4db24ef674bbaf6e6dbc9a006eccd852b33b66f5a5"
+      },
+      {
+        "file": "ai/skills/sites/templates/worker-esm-starter/README.md",
+        "sha256": "a96449d81e90c01df1eb3a51e1178df813577712d00ca3695b77bd9a81714e99"
+      },
+      {
+        "file": "ai/skills/sites/templates/worker-esm-starter/scripts/build.sh",
+        "sha256": "76bddebeb2accb38b37de0673778d7bf3119bc7da7ed5ae4c1d4c9884969848f"
+      },
+      {
+        "file": "ai/skills/sites/templates/worker-esm-starter/scripts/validate-artifact.mjs",
+        "sha256": "39d9df53ac2461962466d5965c5f4d06f08024ceca40605952d8b753b88d41fd"
+      },
+      {
+        "file": "ai/skills/sites/templates/worker-esm-starter/worker/index.js",
+        "sha256": "2917434bd856c428f5ea636148dfd0161804c14a2f81e019980d573af28ef883"
+      }
+    ]
+  },
+  {
+    "skill": "design-taste-frontend",
+    "purpose": "consulted; product brief takes precedence over marketing defaults",
+    "source": "skills/design-taste-frontend",
+    "files": [
+      {
+        "file": "ai/skills/design-taste-frontend/SKILL.md",
+        "sha256": "aa194351b246b8b4799099d4ed7b033d29eab6e6e3d58d8d2172978be7b3ec89"
+      }
+    ]
+  },
+  {
+    "skill": "impeccable",
+    "purpose": "consulted; not used to scaffold or install hooks",
+    "source": "skills/impeccable",
+    "files": [
+      {
+        "file": "ai/skills/impeccable/agents/impeccable_asset_producer.toml",
+        "sha256": "d2be0f7b066b1af4f52a9c61539e4c50deaf4b0673e2bf2b7ea429e4c02c830f"
+      },
+      {
+        "file": "ai/skills/impeccable/agents/impeccable_documenter.toml",
+        "sha256": "d5922228b571900e21a47855d7de9e081c2246fc9cec6c6235b1a6da31098896"
+      },
+      {
+        "file": "ai/skills/impeccable/agents/impeccable_finish_reviewer.toml",
+        "sha256": "59efadb3b5a0209e052fb0d3671a633aed6c6be3cbb61db034b9a7fc12bae692"
+      },
+      {
+        "file": "ai/skills/impeccable/agents/impeccable_manual_edit_applier.toml",
+        "sha256": "7c519ed4a94aa01677b741afa9ae56c71d3b9bc19f48f4166d87b1e4579613ed"
+      },
+      {
+        "file": "ai/skills/impeccable/agents/openai.yaml",
+        "sha256": "cbd8bd68fa00935dd0f179adb169252629cf7ee443ea9dc7db77e7ef2cf77446"
+      },
+      {
+        "file": "ai/skills/impeccable/reference/adapt.md",
+        "sha256": "bead87679caad7c537dd7c04c3bb78be56ac7eec279ad6aad7322f48ff2df2d9"
+      },
+      {
+        "file": "ai/skills/impeccable/reference/adapt.native.md",
+        "sha256": "6acc0bf221a4ddc6e5c6438348920b2ca2393b29c4314dbde2cdc23f2b1a9639"
+      },
+      {
+        "file": "ai/skills/impeccable/reference/android.md",
+        "sha256": "058f81f256134841875fd3183e06b37a023de0c877fd2b9eecd97011640791fe"
+      },
+      {
+        "file": "ai/skills/impeccable/reference/animate.md",
+        "sha256": "d658c48ffbe0031e8e3b318996cad6ceafe29e40aa50d5bb25e4bf1d6839dc7c"
+      },
+      {
+        "file": "ai/skills/impeccable/reference/audit.md",
+        "sha256": "910461b1c1f8216155165955c860a884a1e2f557cb38f21ef512ea90ef6503c2"
+      },
+      {
+        "file": "ai/skills/impeccable/reference/audit.native.md",
+        "sha256": "1b10f9ad3d3a1494ee1bbdf35bb6aa453e98defa6e1ae99177b167795054a4f1"
+      },
+      {
+        "file": "ai/skills/impeccable/reference/bolder.md",
+        "sha256": "f964506c0fae87b3c2c1db7016ddc9be9ef970bbcf5548d684b997b5d5991586"
+      },
+      {
+        "file": "ai/skills/impeccable/reference/clarify.md",
+        "sha256": "173dd66abe65633910dcb04a51f40d6ff2a793f87088f022a02fc4cad24dd133"
+      },
+      {
+        "file": "ai/skills/impeccable/reference/colorize.md",
+        "sha256": "bc5f71f1129d0f2c310d913d07c8dc609a1d25644121bd78c308f42d52a0b9e9"
+      },
+      {
+        "file": "ai/skills/impeccable/reference/craft-floor.md",
+        "sha256": "e802e4f7bdc89050a9c0f2ca506e1d493a2316e6e810c0336c57aa073717ef3e"
+      },
+      {
+        "file": "ai/skills/impeccable/reference/craft.md",
+        "sha256": "9205e222bc6565b37fb504ceec93233c2d2a456802b69d16e6b1c44723907c4c"
+      },
+      {
+        "file": "ai/skills/impeccable/reference/critique.md",
+        "sha256": "869932e7b8d22e251b5af97bfba8c1c01c41ddfaeff66ee0151e9ddcef91bd9c"
+      },
+      {
+        "file": "ai/skills/impeccable/reference/degraded/asset-producer.md",
+        "sha256": "e28c0d9e42b127ebf09762ae160b9e94a376576f66fb1d66888871467fb11884"
+      },
+      {
+        "file": "ai/skills/impeccable/reference/degraded/documenter.md",
+        "sha256": "97a09e350c383cb2f6bba027b83bedffd12a23b1b439ad4a045a48953eb19365"
+      },
+      {
+        "file": "ai/skills/impeccable/reference/degraded/finish-reviewer.md",
+        "sha256": "c70d4bd77fe9142bbe7e3b412d3ca44443e0914bdb323577dc2acb59e8d72078"
+      },
+      {
+        "file": "ai/skills/impeccable/reference/degraded/manual-edit-applier.md",
+        "sha256": "9aae8d5bfb72a8cf3473dca74d5046e28002c0b43a7f9b3c14cd0f1a06c8deb4"
+      },
+      {
+        "file": "ai/skills/impeccable/reference/delight.md",
+        "sha256": "098a891028ce59c212b747d3c70468dd750aff7053a703d1336045ed31e0da7c"
+      },
+      {
+        "file": "ai/skills/impeccable/reference/distill.md",
+        "sha256": "ea8432c90c30ecb0426662a681ead5c0941113079704e1a766cda09e85b15b4f"
+      },
+      {
+        "file": "ai/skills/impeccable/reference/doctor.md",
+        "sha256": "c7a439efd70bdc232da970d0695c60502525e5b7e882ad9d5b1f4794b00dd260"
+      },
+      {
+        "file": "ai/skills/impeccable/reference/document.md",
+        "sha256": "3673248740bcdd1122ccc610093ba2fe52f3943a61ce0b7170b74dc49e5b6098"
+      },
+      {
+        "file": "ai/skills/impeccable/reference/extract.md",
+        "sha256": "31b90048c0b540daec46762a10c2b6b6434737a89af005054d8b848d829d003b"
+      },
+      {
+        "file": "ai/skills/impeccable/reference/harden.md",
+        "sha256": "b31ff29c7a1ea979c6d039f7e8d17007410697ab49536690dca109f0af3f20f8"
+      },
+      {
+        "file": "ai/skills/impeccable/reference/hooks.md",
+        "sha256": "03503fad7c3232fe149793e444f9c161c0c245218c1619f51e45317704c6c657"
+      },
+      {
+        "file": "ai/skills/impeccable/reference/init.md",
+        "sha256": "09edecac88d50cd6046c8a43e741685c0f845cf59254116bc85f543a6aa81384"
+      },
+      {
+        "file": "ai/skills/impeccable/reference/ios.md",
+        "sha256": "40c87038b5f75147a5952a96237acf312a327bf70c1bcd8e0a5f064625ae9668"
+      },
+      {
+        "file": "ai/skills/impeccable/reference/layout.md",
+        "sha256": "2d5eba1b9493f85c149a197fe6c4e9d015f5e68c49f24f5210a237cee4e44348"
+      },
+      {
+        "file": "ai/skills/impeccable/reference/live-setup.md",
+        "sha256": "d649665aaead9e8ac4ccba57bbc7726d276c5bcb464130eb914f6c08cd79d711"
+      },
+      {
+        "file": "ai/skills/impeccable/reference/live.md",
+        "sha256": "2b4b05cae6d54fe0f9633e79cfc5bc58262548de89c25225b7a7728221ca64be"
+      },
+      {
+        "file": "ai/skills/impeccable/reference/new-work.md",
+        "sha256": "2bf2cfa38c7adb35d4be1e1aa4da60673013b4deaf6ffd5a03d6a56a955495b8"
+      },
+      {
+        "file": "ai/skills/impeccable/reference/onboard.md",
+        "sha256": "ef2dde00030580ed2765cbf7be9b2ea4a6f64cb915b804fd6f6abcf38051c7b9"
+      },
+      {
+        "file": "ai/skills/impeccable/reference/operate.md",
+        "sha256": "a9d2203acd45ca33a13d5c68b02b23ed512425ac15f0e8438318ed124b43729d"
+      },
+      {
+        "file": "ai/skills/impeccable/reference/optimize.md",
+        "sha256": "f672ef8251a3ed4051a053d30819664951b17540b2899acd27d20e500c234abc"
+      },
+      {
+        "file": "ai/skills/impeccable/reference/overdrive.md",
+        "sha256": "fce6688138d2ceb1e3d2cde5231f54b1d8dc8748b4c95a7919aa83b6f924cf96"
+      },
+      {
+        "file": "ai/skills/impeccable/reference/polish.md",
+        "sha256": "e6bbc05a9e1f905811d19401c1e6c7b97588375454e1462dbd811f803d239b07"
+      },
+      {
+        "file": "ai/skills/impeccable/reference/quieter.md",
+        "sha256": "190a4e642ca362d7499f3c3ab123e21f18f75457d11f072b545a183f296e6495"
+      },
+      {
+        "file": "ai/skills/impeccable/reference/routing.md",
+        "sha256": "b2fda1126e4a05d127f656d878d9baa593860bd8bc7f70186f8e13c5474c14cc"
+      },
+      {
+        "file": "ai/skills/impeccable/reference/shape.md",
+        "sha256": "a55f016c046cb6a27c55bd7f346375aeb506a755c4fbca19a5f92dbd42309c23"
+      },
+      {
+        "file": "ai/skills/impeccable/reference/typeset.md",
+        "sha256": "6d803447fb419ee718012f6263d2685ad462a14dc08c338392e28b79823a0553"
+      },
+      {
+        "file": "ai/skills/impeccable/reference/visualize.md",
+        "sha256": "1a0a68caa14cb16fbcabba663e3603ffd3337aaec4f2679f72b279bad8ce4a08"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/command-metadata.json",
+        "sha256": "6bdbc3f745ceee15e10b050f109ce42bbeb53ab3c3b5239257de1d596654dee7"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/concept-seed.mjs",
+        "sha256": "8ea706b9aedaa2a5c8cac88cf5cf5a2252bd90ff9430f0e7c1e79bddfa50fa17"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/context-signals.mjs",
+        "sha256": "c7c70735fae0834576636fb9b9c32504a7f08efc95fdc4db97a469f6ca4dd2c4"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/context.mjs",
+        "sha256": "7c747b6f5bba3ca860a22075b765ea4b0e7688fdcaa97e1dfc5b01a536303a89"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/critique-storage.mjs",
+        "sha256": "17c14fc03d9c53f7f48dfe6e8ef2a15d2a35c9b8f341ddb25720e01cc1ca68e9"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/detect-csp.mjs",
+        "sha256": "2d80520bef13cb93107699714bc0d2be5a2787a9aa079ecec91b94508a8125a4"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/detect.mjs",
+        "sha256": "f5dfd05ca1e314acd8ed79c6301a20a1b844f2eb6691bd63e04116a8e7efb187"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/detector/browser/injected/index.mjs",
+        "sha256": "30d70ec4d1804b333be05f2448a0cc5a39b517fc8fc860d650215457dfd93402"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/detector/cli/main.mjs",
+        "sha256": "a319e56a41da58b1f6cccff8ca77dbc1f090fadce693fbc057276a315f53891f"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/detector/design-system.mjs",
+        "sha256": "cacf7ae83b4ccfff84ceb6ab06549b399e0ec88750f053249db65371dd302de1"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/detector/detect-antipatterns-browser.js",
+        "sha256": "ebdf645ee38f69c5a1b4133eaa57dd66910c0208831651361f74abab7f73da37"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/detector/detect-antipatterns.mjs",
+        "sha256": "c48465e64d390d97e7a3891fbe443e2abe45c3c6da58b5df26cb847bb88018cc"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/detector/engines/browser/detect-url.mjs",
+        "sha256": "af6d28bfb1bb2fc667f56823b9fa12d4ee56ee5b3afbea28c5b81fecb66b84dc"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/detector/engines/regex/detect-text.mjs",
+        "sha256": "8e0ecc091bcecc24eb34d34dab9bcabb1057af6a6dcf34f186fb370b26e61157"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/detector/engines/static-html/css-cascade.mjs",
+        "sha256": "6809969a6e2c58992d863c23d6f2c6fb6b8ddacc503dac2ad0e5452bf2725c54"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/detector/engines/static-html/detect-html.mjs",
+        "sha256": "481b584ccdf3ac28065dbab11f65d638e3e7a35e14c7e62bc5da3d59d2a7efd7"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/detector/engines/visual/screenshot-contrast.mjs",
+        "sha256": "b4520b3f001079bd175bf20d46c5197b1b8ec5fb98fdf72c50a24c0b6598ee99"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/detector/findings.mjs",
+        "sha256": "8b8af7212c8515d6791a8af1375d0619a9f9a707a881e6fbd850e4216b3f8eca"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/detector/node/file-system.mjs",
+        "sha256": "a6369b2573cf8af096a5f38f85a9cf4ee3af68817846a0ec9047534cbe05d05e"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/detector/profile/profiler.mjs",
+        "sha256": "5e201f3557360bd368a3977fecf925f376fd95f8a4dd6c4cc63fbd62848cda43"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/detector/registry/antipatterns.mjs",
+        "sha256": "4544ccca3d7c341d878b941fbe20620750dbf9d29dd6d15e063128a1e390b345"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/detector/rules/checks.mjs",
+        "sha256": "e63f6adbd0893d75105e825b1656a268c512a9bc7e5f3d17d4ac70ef412d6e57"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/detector/shared/color.mjs",
+        "sha256": "c9664cdfcb5cc964a6c78fba82c51640bf20258601572ea0bb413c00446489f5"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/detector/shared/constants.mjs",
+        "sha256": "606f50159d56b5e972724c13933e63220696636215292e5316846426f3e12896"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/detector/shared/fonts.mjs",
+        "sha256": "869c297295a10082d87988f31c136c5df9ddad84da0c2bbba2e85e1261e320a6"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/detector/shared/inline-ignores.mjs",
+        "sha256": "74c80303e25f017b4671ae299b9fca424a5f7714203d19207a8d8896dfd2eecc"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/detector/shared/page.mjs",
+        "sha256": "b4cef5548d84fa90d15e6b42b20be9ef74ed05e4e6e46076ec5acc61b343315c"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/doctor.mjs",
+        "sha256": "4d68dc2884516c2ab17090020154417dc644075acf7c4657f60e6cf12df0a2d9"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/embed-prompt.mjs",
+        "sha256": "4614260ccaa091bea10a6096027d2aca306160e1764765ce155aadcbe674dbc5"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/generate-image.mjs",
+        "sha256": "0994c7ab8bc280b9b09676bc0296ca9eea8609b00b1a48eb783486f145c0f338"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/hook-admin.mjs",
+        "sha256": "2f3de124a1b4be3f2660c7a3cc028355cac3ac75ad3cca87712b8d85e0bda32e"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/hook-before-edit.mjs",
+        "sha256": "49224a98a9addbeaca554b648c3973cb0250ba4cf9dfb56a1b4469c56d98dccc"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/hook-lib.mjs",
+        "sha256": "d6d65ecfd069c632b162b23b6bf4a46e8fe0014f0caddd32725a38dbf0e80206"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/hook.mjs",
+        "sha256": "c10d8b31213c5179cde45277eae517d4ef6fcd621b14261b7de54c64faac22a3"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/lib/artifact-schema.mjs",
+        "sha256": "ad0a72e96c74be09490b1aea095478e307f45d707b15021c922cbd4466619359"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/lib/composition-catalog.mjs",
+        "sha256": "a733122589e5bf6dbfcfbc2f9d016d6f54db0e4cebf278ac7f6a9cea374c9916"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/lib/concept-catalog.mjs",
+        "sha256": "43fa911f54d6f36384c727a62b4bfead8a7b282d0d7ad56230fdd59d1be2ac01"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/lib/design-parser.mjs",
+        "sha256": "42d37e97db82ca8082033f582bcdbd341373d0cc1c6927605d1a4385f8f34131"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/lib/impeccable-config.mjs",
+        "sha256": "7297e323a700ef8f819641169ebb1c1ae09e7f730d947eaf77a83dd415c2e3fd"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/lib/impeccable-paths.mjs",
+        "sha256": "276ec7ac47e3c250e76616755d83cca4846f0f951b51c29f985ec84b51282aa2"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/lib/is-generated.mjs",
+        "sha256": "2d6c37f821cb42161264068b81c4c97629a653b661403cedadb5eb23099d0acc"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/lib/live-path-globs.mjs",
+        "sha256": "f2657a25351ae5bc4d503e7257f84e014815fc562225ebf8fe15d3e277ca6f53"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/lib/open-system-browser.mjs",
+        "sha256": "3785ef4ba47bbbe176469e2536e8ef29e885f955970404f46ff34763f831bf11"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/lib/provider.mjs",
+        "sha256": "998c57324fdab98a0bfbd01a6099eadac7276038da961697d6069bbdeb0e5856"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/lib/roll-selection.mjs",
+        "sha256": "769cf0d4f8ea8aaee78ae29c7ee9ec27a18070b2137e0ee18adff862c84634e5"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/lib/staleness-deep.mjs",
+        "sha256": "c6ea09855e346a3b3bdb9601bbe843db07cbd25e9ebac67d93bc75e14a372725"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/lib/staleness-notice.mjs",
+        "sha256": "2770f3360119836822a5823d08248976e327d49adbb06caee1492493e257c8c4"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/lib/staleness.mjs",
+        "sha256": "f900a3ce0cd836194859c575dd32f8802d6a078bb8af27e1b8b6bb49485ad7d6"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/lib/surface-briefs.mjs",
+        "sha256": "33b35099b95d40e034b6a65657a1fd90fd011cdcb752f1c7a51e8470df37e668"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/lib/target-args.mjs",
+        "sha256": "8f8b902d9ec7dbad0431226bb8aea935cd67d68878d19d95a605be0585056f31"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/lib/target-slug.mjs",
+        "sha256": "dbc2670ad1461658d1b43fe15778ac220bc0db57af1f3fd8ccb6251b5ca5a2a4"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/lib/template-extensions.mjs",
+        "sha256": "1a3808237835998f3fea600424c64ab1775beac7e0c344d6b23f472ffc2a3e64"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live/accept-css.mjs",
+        "sha256": "b72ea8f2cfc445598e8948f55e1625f5045ff1c5b968c246b92dbc839d4b6f1e"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live/accept-verify.mjs",
+        "sha256": "fcb04462d65b664f6d663a4fe993acd41921dea7d3c387b7755332290f951580"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live/browser-script-parts.mjs",
+        "sha256": "2ceb3083de7fe80160f40379c0ed47220bade5e4a1964cde4ae8e745049061c5"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live/completion.mjs",
+        "sha256": "d7821979aec5fbc2028a6d98aa3d0abe34b88b0e2527f6df4e4f71e5782430bd"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live/event-validation.mjs",
+        "sha256": "ef06987cfc2c8d8cde0e292fafec4a1aeba9fb43d84dffe2526fac803668c598"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live/frameworks/astro.mjs",
+        "sha256": "9bc679fd9e2f2800e97519bd16f36af7afb696d61391a08f7c9bbc687f03e87d"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live/frameworks/detect-utils.mjs",
+        "sha256": "c69d859d73574784c33e6ac81e537022d619dbaf7f6f2d3637317a3df41b30f8"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live/frameworks/index.mjs",
+        "sha256": "54936fa60f0abb9483fbaac59ba9797c4173e9a77f504ff3df9a32b208ae1bab"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live/frameworks/journal.mjs",
+        "sha256": "536535b977a063fe220447a78cdd351fbc224ac1bfb1bdd1f0827577ad4a5954"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live/frameworks/nextjs.mjs",
+        "sha256": "a724f8fd9be4ef0c58c268c81e0ff651da4ee6c5a7a7a96258932aaab0d3842e"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live/frameworks/nuxt.mjs",
+        "sha256": "8f243e1e91f59b1a61036c0adf45ba4ea49e78983ee56d4634a6d567dfa7d263"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live/frameworks/script-src.mjs",
+        "sha256": "3594a9941214bcea837f2807bd1e77aca33aeb5cea5f4212f5c03f802e6d7f26"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live/frameworks/static-html.mjs",
+        "sha256": "4521a21f9b2d171d78a923d4e2c000b729549055f1f82ca1f1725be9455c10f1"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live/frameworks/sveltekit.mjs",
+        "sha256": "4f4cb04e6c584f7f179933c79f75514f2c7086a29205527667ba214a60022c2b"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live/frameworks/tag-strategy.mjs",
+        "sha256": "deb03caaaaef15da569c7453d7a6839dc9a47cf504d5c6c74f1127a84d23c4eb"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live/frameworks/tanstack-start.mjs",
+        "sha256": "be7b9135a7b934f29f119c301cf3572b622045120d65ec47444ee58ca51acd62"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live/frameworks/vite-generic.mjs",
+        "sha256": "63fadafbecf340f037e9d52912483774aa9a41761b1680b9c8cf9c2e5bba30b3"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live/generation-preflight.mjs",
+        "sha256": "d98806a798bc0425c204e3dcbbf40071fe9ab46a95bcfb3624f36740b6a0f1da"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live/insert-ui.mjs",
+        "sha256": "c86839fc9be98eadc0ff6afaa6ab010a7539e9af77e8deeba898cb93f7f311f4"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live/instructions.mjs",
+        "sha256": "9bebb2689fbf4f454b3c3afb2b58e1bcb70705113b05041f959f67caa5c802e1"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live/manual-apply.mjs",
+        "sha256": "c0e7fc5c3d4a7d6e1d6a8e6f85cbe005e5dc01d77b16fd0735605f287c4c8b66"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live/manual-edit-routes.mjs",
+        "sha256": "5517c40db7c91a5b24b134f79cb0f87c90e307b2f7831b1de670d60e529557c0"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live/manual-edits-buffer.mjs",
+        "sha256": "bbd1aba1b9bc891cba771ee8b891d344542119967ae4666e7147da59de5485fd"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live/poll-lanes.mjs",
+        "sha256": "a516bc942c55b66be915619794f4ec79aadf94d6966c6fc7aee24f1fbaa60ab3"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live/project-ignores.mjs",
+        "sha256": "b4088c6fbc231bc13b11804bea90a223d077d3762f3d93990c6044c7ea10d9e1"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live/roots.mjs",
+        "sha256": "715e9658cb28746c126faf24bbd3cd949e1ebc5dd189eb455887544ae4efbf12"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live/session-store.mjs",
+        "sha256": "03217be8aad575f3ce44c1a634c40a013ca18edeefa81894450637af2603c411"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live/source-lock.mjs",
+        "sha256": "2919dd7641a5ff2320a01a1bf9f9adcff6e7e2f2b3ccb1b48cdf0b5c091b3803"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live/source-search.mjs",
+        "sha256": "429dcbcf21785df225fa97a24906dec11b5170e76df6ed0a2b098fa2c2057de2"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live/svelte-ast.mjs",
+        "sha256": "11feee00b0637e5960c2045f3dca290eb00ceef00f9a09e3fbf3458abfa8779d"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live/svelte-component.mjs",
+        "sha256": "234dae2735aae9385716416a4e958d6890ec7cb42dec2e158fe128e8856eaf97"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live/sveltekit-adapter.mjs",
+        "sha256": "a17e39a2dc0cad436fc00aebeab64dcb2ec1b408e0fdba1a6a8a37844a3b46c3"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live/tanstack-adapter.mjs",
+        "sha256": "5f59be858d71e40a8b70ce114a892511072547608a9e69858a8a66d6c782968c"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live/ui-surfaces.mjs",
+        "sha256": "eccf5853861fd2df44a094037b9fa9302f7de8035e53c956bf8cbac7cd6c4baa"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live/vocabulary.mjs",
+        "sha256": "f1765c853a8894074f511f7b34bda815552e45ea6458babee0ace97416c652ed"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live-accept.mjs",
+        "sha256": "f823b4f71a6ae21ffb8b52aa3a78768f0bee551329cf76ad4144e4680a05c154"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live-browser-dom.js",
+        "sha256": "bcfa4022e741f8034b841aed76b9ea3f6a64a8e08e4dfa43ba99f8be65a73393"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live-browser-ignores.js",
+        "sha256": "c1cb6877ca99a0c1b38ba0c7d59f32702d3022f6821d8045f7133f7c40b6362f"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live-browser-session.js",
+        "sha256": "dddcb8b941f7460aa6a134f7d456b1820747172c12e01de36dab3265b1065cff"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live-browser.js",
+        "sha256": "f0d2200a2b8878e2b68f0cca623759a9bc7e5ee0ffa620c93a76f0de42246330"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live-commit-manual-edits.mjs",
+        "sha256": "dfdc9a128e26a293a12bbf2a21ad34f64ba9b8da73cf0d3d0a24603cca13c051"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live-complete.mjs",
+        "sha256": "28db300c3a5b42ee01d4250a664020523d2b85158fa987d92c403cab19ae030c"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live-copy-edit-agent.mjs",
+        "sha256": "e33514592d56b8e8416f3e7c58ee11a2416047ad559c096c3f16c4e9fc57c41c"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live-discard-manual-edits.mjs",
+        "sha256": "fa967fe27e442dd6c9b467713dd4a05c5d2189af03ad76b98bae9f6642cda545"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live-inject.mjs",
+        "sha256": "bb3a120472b757e96dbc2f5e24b37f39f31dee3c54d785c571baf686cf71096d"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live-insert.mjs",
+        "sha256": "057c81807b2f02d565edd41456fb10a43fb01209cb60a541b58f653e480f8991"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live-manual-edit-evidence.mjs",
+        "sha256": "c5a36c361c435fc023e17be16a78aaf672adb48a6a74e8177cfa775592502638"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live-poll.mjs",
+        "sha256": "1999e61dbf7f3708c9a7944b26004f4a294e4c7129a23db417b200cb1c09a7b5"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live-resume.mjs",
+        "sha256": "b5c9e4b1c27ea2dbbf95b563df7314ddb77c6aa75ce2c760cde15f7082ccbec0"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live-server.mjs",
+        "sha256": "0e2def4cdea1f59d70403f9606723b0391018e31a522f6b639135c8d1b320b7f"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live-status.mjs",
+        "sha256": "12ce152c6aec4ea2c938bd629b8406de0ee9926586e5af9fe550ab06bba88639"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live-target.mjs",
+        "sha256": "7f18323b89167804c2d9005d4766b159c81268c9f21daab9fdec24f513f25eb0"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live-wrap.mjs",
+        "sha256": "f0c5845155c76cd01422a5de92e15e1bb81bb531a2c2985edb21965c5ad38c0a"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/live.mjs",
+        "sha256": "9188f42a93e02ec341335c3441af5de16391196efdf78710e87dd7ef0fb6cb7e"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/modern-screenshot.umd.js",
+        "sha256": "bb36665889124a0b6e15f16045265737449c3bdcf2712cdb08af3cfa01563e2b"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/palette.mjs",
+        "sha256": "6e09e15188033bfb8fe1f8de66f667c2b8b13d48cb55b1f50808330856e5fe16"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/pin.mjs",
+        "sha256": "82c50a1bcabc9dda6487b1dd61bf74a8c2d67befd387aba6a0e283a2dd5ab144"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/serve-question.mjs",
+        "sha256": "48999dd4d8e68797da20ece68618008e395f73ace6f3b8e029303153ca097785"
+      },
+      {
+        "file": "ai/skills/impeccable/scripts/surface-brief.mjs",
+        "sha256": "acd03bf38f6aef2b5d5287cefccacac018063b5b5356c99d191b3bd012f28ed3"
+      },
+      {
+        "file": "ai/skills/impeccable/SKILL.md",
+        "sha256": "dcf6bf768561b1e8ca145674c91e0c8cf53e9d5434086e3d4932660f191e96d4"
+      }
+    ]
+  },
+  {
+    "skill": "openai-docs",
+    "purpose": "consulted during capability questions, not an application dependency",
+    "source": "skills/.system/openai-docs",
+    "files": [
+      {
+        "file": "ai/skills/openai-docs/agents/openai.yaml",
+        "sha256": "0dd6c5ffa81a09782fd24cfa9fe1ec5c9633c90500b166ae18a462e613e876be"
+      },
+      {
+        "file": "ai/skills/openai-docs/assets/openai-small.svg",
+        "sha256": "85ef0a2cde497872edec1525f1d538ccc42b33ff47acdbb88499a1631a4bdb21"
+      },
+      {
+        "file": "ai/skills/openai-docs/assets/openai.png",
+        "sha256": "156cc84d7332bfe95b310350bd470b690d22aa33d65340cc6c2e06022946194c"
+      },
+      {
+        "file": "ai/skills/openai-docs/LICENSE.txt",
+        "sha256": "44e03f7e263eb3ad256440c1eeab5e49168baff5a78ecef9a5447261cf3a91bc"
+      },
+      {
+        "file": "ai/skills/openai-docs/references/codex-self-knowledge.md",
+        "sha256": "f945bf2a7cea6892d7a11ac38fb18b744fefd6d273654a8410c4c79e9f647fbe"
+      },
+      {
+        "file": "ai/skills/openai-docs/references/latest-model.md",
+        "sha256": "66303f714cd51408fcd6eaa81acef1769cbeb6af844883fef2847926fe324fe4"
+      },
+      {
+        "file": "ai/skills/openai-docs/references/mcp-diagnostics.md",
+        "sha256": "e9df2b2f8faa28930db4a2937cdb3665b4548ac958e80a8601a5dd0da1e6fad0"
+      },
+      {
+        "file": "ai/skills/openai-docs/references/model-migration.md",
+        "sha256": "469229631360fa6899ebc4cbbad8c4161ccf9e6b38b241054e8fe499dcd45cc2"
+      },
+      {
+        "file": "ai/skills/openai-docs/references/model-selection.md",
+        "sha256": "ce020100a28004500c927abcd57cff154c5c360eb72d918ef7d72492e2484cce"
+      },
+      {
+        "file": "ai/skills/openai-docs/references/official-docs.md",
+        "sha256": "b2301d72b8092be5f5727d8d1cbc75740887d836f4f13b469f40c1db16b39fe3"
+      },
+      {
+        "file": "ai/skills/openai-docs/references/prompting-guide.md",
+        "sha256": "69517cde6c3bac945100a9da946d65c9effdd145d7600dead41f8adc1c1a7e38"
+      },
+      {
+        "file": "ai/skills/openai-docs/references/upgrade-guide.md",
+        "sha256": "3ec7763f8adab0e2d35d752cc762f1382726108e166bbf10dbe9d38608d3fc5a"
+      },
+      {
+        "file": "ai/skills/openai-docs/references/upgrading-to-gpt-6-astra.md",
+        "sha256": "789fcaf0999f56cebf801d0f6e6bdfe347dcfb5eff3d9a40ff815c15336f8699"
+      },
+      {
+        "file": "ai/skills/openai-docs/scripts/fetch-codex-manual.mjs",
+        "sha256": "6172bd2caa95593b735c3e60c0bd5d7ae49ca0a345440f2d2a36e0dfc556801a"
+      },
+      {
+        "file": "ai/skills/openai-docs/scripts/resolve-latest-model-info",
+        "sha256": "8f5006efa15c034ede29821b627d7b86c43f7dfaab422d335f45b9be8d04e2d5"
+      },
+      {
+        "file": "ai/skills/openai-docs/scripts/resolve-latest-model-info.cjs",
+        "sha256": "2eee6052aa77c9e98d7ea8a59caca73c3158eded7ee707308ec563211c30692f"
+      },
+      {
+        "file": "ai/skills/openai-docs/SKILL.md",
+        "sha256": "8ce8021101bcea594ff92ee6cfd8ca7641a49ee66d7bc6070555f1a33fc239d9"
+      }
+    ]
+  }
+]
