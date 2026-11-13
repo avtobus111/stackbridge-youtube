@@ -1,0 +1,13 @@
+.git
+.env
+runtime
+.venv
+**/__pycache__
+**/.pytest_cache
+**/pytest-cache-files-*
+.ruff_cache
+ai
+docs
+work
+node_modules
+

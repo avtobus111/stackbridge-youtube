@@ -1,0 +1,24 @@
+name: Verify video application
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  integration:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run tests on PostgreSQL and FFmpeg
+        run: bash scripts/test.sh
+      - name: Start application from empty volumes
+        run: bash start.sh
+      - name: Check real object storage and playback
+        run: python3 scripts/smoke.py http://localhost:8000
+      - name: Record runtime diagnostics
+        if: failure()
+        run: docker compose logs --tail 150
+      - name: Stop evaluation stack
+        if: always()
+        run: docker compose down --remove-orphans
+

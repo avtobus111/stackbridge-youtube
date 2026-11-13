@@ -1,11 +1,14 @@
 import time
-from fastapi import APIRouter, Depends, HTTPException, Query
-from sqlalchemy import and_, or_, select, func, exists, delete
+import secrets
+from fastapi import APIRouter, Depends, HTTPException, Query, Request, Response
+from sqlalchemy import and_, or_, select, func, exists, delete, update
+from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import Session
 from .db import get_db
-from .models import User, Video, Grant, Like, Comment, Subscription, Playlist, PlaylistItem
+from .models import User, Video, Grant, Like, Comment, Subscription, Playlist, ViewEvent
 from .schemas import VideoInput, GrantInput, ChannelInput
-from .security import current_user, require_csrf, require_user, user_json
+from .security import current_user, require_csrf, require_user, user_json, check_origin, digest
+from .config import settings
 from .storage import store, bucket
 
 router = APIRouter(prefix='/api', tags=['Videos and channels'])
@@ -105,6 +108,26 @@ def studio(user=Depends(require_user), db: Session = Depends(get_db)):
 @router.get('/videos/{video_id}')
 def detail(video_id: str, user=Depends(current_user), db: Session = Depends(get_db)):
     return video_json(get_video(video_id, user, db), user, db)
+
+
+@router.post('/videos/{video_id}/view')
+def record_view(video_id: str,request: Request,response: Response,user=Depends(current_user),db: Session = Depends(get_db)):
+    check_origin(request)
+    get_video(video_id,user,db)
+    visitor = request.cookies.get('visitor','')
+    if not visitor or len(visitor) > 100:
+        visitor = secrets.token_urlsafe(24)
+        response.set_cookie('visitor',visitor,max_age=2592000,httponly=True,samesite='lax',secure=settings().cookie_secure)
+    key = digest('user:'+user.id if user else 'guest:'+visitor)
+    if not db.get(ViewEvent,(video_id,key)):
+        db.add(ViewEvent(video_id=video_id,viewer_key=key))
+        try:
+            db.flush()
+            db.execute(update(Video).where(Video.id == video_id).values(views=Video.views+1))
+            db.commit()
+        except IntegrityError:
+            db.rollback()
+    return {'ok':True}
 
 
 @router.patch('/videos/{video_id}')

@@ -78,6 +78,13 @@ class Like(Base):
     user_id: Mapped[str] = mapped_column(ForeignKey('users.id', ondelete='CASCADE'), primary_key=True)
 
 
+class ViewEvent(Base):
+    __tablename__ = 'view_events'
+    video_id: Mapped[str] = mapped_column(ForeignKey('videos.id', ondelete='CASCADE'), primary_key=True)
+    viewer_key: Mapped[str] = mapped_column(String(64), primary_key=True)
+    created_at: Mapped[float] = mapped_column(default=time.time)
+
+
 class Subscription(Base):
     __tablename__ = 'subscriptions'
     user_id: Mapped[str] = mapped_column(ForeignKey('users.id', ondelete='CASCADE'), primary_key=True)

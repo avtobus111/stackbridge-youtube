@@ -6,5 +6,7 @@
 - Local Windows has Python, Node, Git and FFmpeg. Docker and working WSL runtime have not been found. Native PostgreSQL and S3 testing will be attempted while preparing the Ubuntu Compose deployment.
 - Dependency setup: venv ensurepip failed, so using pip's supported --python target installation; npm default offline/cache is redirected to project work directory.
 - Task 1: complete. Six auth tests observed missing-API failures first, then 6 passed (Windows, SQLite, moto S3). Native PostgreSQL installed only in work/tools, starting isolated database for subsequent integration checks.
-- User instruction: periodically inspect account get_usage_limits for the 300-minute window. Stop and save state when remaining <=3%. One-time continuation scheduled for 2026-11-13 05:00 Europe/Moscow, automation stackbridge-05-00. Do not consume a reset credit.
+- Tasks 2–3: complete. 30 tests pass on native PostgreSQL 18.6, moto S3 and real FFmpeg, including private discovery/grants, moderation, social APIs, real transcoding, HTTP ranges, invalid files and lease recovery.
+- Task 4: complete. 34 tests pass with frontend routing/config and repeatable demo seed. Real-stack smoke on PostgreSQL + SeaweedFS + worker passed. Browser Edge scenarios passed: search, signup, upload, worker processing, playback, like, escaped comment, playlist, private grant, mobile and local Swagger; no JavaScript errors.
+- Task 5: deployment configuration and documentation in progress. Runtime code verified on Windows; an actual Docker/clean Ubuntu run remains to be established.
 
