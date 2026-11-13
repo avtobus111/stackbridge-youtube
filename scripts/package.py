@@ -26,7 +26,8 @@ def package(output):
     if not git_dir.is_dir():
         raise RuntimeError('A standalone .git directory is required for the employer archive')
     output.parent.mkdir(parents=True,exist_ok=True)
-    with zipfile.ZipFile(output,'w',zipfile.ZIP_DEFLATED) as archive:
+    # Bundled skill assets can legitimately have epoch timestamps; ZIP starts at 1980.
+    with zipfile.ZipFile(output,'w',zipfile.ZIP_DEFLATED,strict_timestamps=False) as archive:
         for name in files:
             archive.write(ROOT/name,'stackbridge-youtube/'+name)
         for path in git_dir.rglob('*'):
