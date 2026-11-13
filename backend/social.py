@@ -210,6 +210,20 @@ def report(video_id: str, data: ReportInput, user=Depends(require_csrf), db: Ses
     return {"ok": True}
 
 
+def moderation_video(video, user, db):
+    if can_view(video, user, db):
+        result = video_json(video, user, db)
+        result["can_view"] = True
+        return result
+    return {
+        "id": video.id,
+        "title": "Приватное видео",
+        "visibility": "private",
+        "hidden": video.hidden,
+        "can_view": False,
+    }
+
+
 @router.get("/moderation/reports")
 def reports(user=Depends(require_moderator), db: Session = Depends(get_db)):
     rows = db.scalars(
@@ -222,7 +236,7 @@ def reports(user=Depends(require_moderator), db: Session = Depends(get_db)):
                 "reason": r.reason,
                 "created_at": r.created_at,
                 "reporter": user_json(db.get(User, r.user_id)),
-                "video": video_json(db.get(Video, r.video_id), user, db),
+                "video": moderation_video(db.get(Video, r.video_id), user, db),
             }
             for r in rows
         ]
@@ -248,7 +262,7 @@ def moderate(video_id: str, data: ModerationInput, user=Depends(require_csrf), d
         )
     )
     db.commit()
-    return video_json(v, user, db)
+    return moderation_video(v, user, db)
 
 
 @router.get("/admin/users")

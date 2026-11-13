@@ -16,7 +16,7 @@ Users have unique case-insensitive handles and one channel each. Videos belong t
 
 Authentication uses random opaque HttpOnly session cookies, hashed tokens at rest, expiry, logout revocation and per-session CSRF tokens. Passwords use salted scrypt. Registration never accepts a role; only administrators change roles. Mutating requests verify origin and CSRF. Authentication throttling persists in PostgreSQL.
 
-The browser never receives an S3 credential or public object URL. API endpoints authorize every media request, proxy S3 objects and support a single HTTP byte range. Private responses use no-store. Moderators can inspect reported/private content for moderation; this explicit exception is documented in the API and UI, and they cannot grant viewing rights. Administrators cannot be created through public signup.
+The browser never receives an S3 credential or public object URL. API endpoints authorize every media request, proxy S3 objects and support a single HTTP byte range. Private responses use no-store. Moderation roles do not bypass private grants: staff need explicit owner permission to view private content. Reports redact ungranted private metadata while allowing moderation actions. Administrators cannot be created through public signup.
 
 ## Upload and processing
 

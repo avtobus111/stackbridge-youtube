@@ -21,7 +21,7 @@ def create_app():
         version="1.0.0",
         docs_url=None,
         redoc_url=None,
-        description="YouTube-style video app. Sign in, obtain csrf_token from /api/auth/me, and send X-CSRF-Token for mutations. Media endpoints enforce the same permissions as metadata. Moderators and administrators can inspect private videos for moderation.",
+        description="YouTube-style video app. Sign in, obtain csrf_token from /api/auth/me, and send X-CSRF-Token for mutations. Media endpoints enforce the same permissions as metadata. Private videos require explicit owner permission, including for staff.",
     )
     app.include_router(auth_router)
     app.include_router(video_router)

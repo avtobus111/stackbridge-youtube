@@ -11,4 +11,6 @@ Regression evidence: tests/test_recovery_races.py first produced 3 failures, the
 
 Reviewer found no straightforward privacy/CSRF/role-injection defect. This is a review observation, not a security certification. No Minor findings were deferred.
 
+Final reconciliation with the literal employer specification removed the earlier documented staff exception for private playback. Moderator/admin now need an owner grant, and moderation reports redact private metadata without that grant. Three additional regressions first failed and then passed; the complete native PostgreSQL suite now has 40 passing tests. The earlier reviewer treated the exception as intentional, so this policy correction was made by the parent against the binding original specification.
+
 Behaviors the reviewer did not independently judge: actual clean Ubuntu execution, production TLS/backups/high availability/adaptive streaming, deliberately documented moderator access to private content, final documentation/provenance packaging, and rerunning the parent's shared-database tests. The parent owns their validation and records the actual outcome in docs/verification.md.

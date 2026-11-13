@@ -15,25 +15,33 @@ router = APIRouter(prefix="/api", tags=["Videos and channels"])
 
 
 def allowed_condition(user):
-    if user and user.role in ("moderator", "admin"):
-        return True
-    public = and_(Video.visibility == "public", Video.status == "ready", Video.hidden.is_(False))
+    staff = bool(user and user.role in ("moderator", "admin"))
+    public = and_(
+        Video.visibility == "public",
+        True if staff else and_(Video.status == "ready", Video.hidden.is_(False)),
+    )
     if not user:
         return public
     granted = and_(
         Video.status == "ready",
-        Video.hidden.is_(False),
+        True if staff else Video.hidden.is_(False),
         exists(select(Grant.video_id).where(Grant.video_id == Video.id, Grant.user_id == user.id)),
     )
     return or_(public, Video.owner_id == user.id, granted)
 
 
 def can_view(video, user, db):
-    if user and (video.owner_id == user.id or user.role in ("moderator", "admin")):
+    if user and video.owner_id == user.id:
         return True
-    if video.hidden or video.status != "ready":
-        return False
-    return video.visibility == "public" or bool(user and db.get(Grant, (video.id, user.id)))
+    staff = bool(user and user.role in ("moderator", "admin"))
+    if video.visibility == "private":
+        return bool(
+            user
+            and db.get(Grant, (video.id, user.id))
+            and video.status == "ready"
+            and (staff or not video.hidden)
+        )
+    return staff or (not video.hidden and video.status == "ready")
 
 
 def get_video(video_id, user, db):
