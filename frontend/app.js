@@ -10,6 +10,17 @@ let toastTimer, currentComments = [];
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
 const enc = value => encodeURIComponent(value);
 const num = n => new Intl.NumberFormat('ru-RU', { notation: n >= 10000 ? 'compact' : 'standard', maximumFractionDigits: 1 }).format(n || 0);
+const pluralRules = new Intl.PluralRules('ru-RU');
+const countForms = { views: ['просмотр', 'просмотра', 'просмотров'], subscribers: ['подписчик', 'подписчика', 'подписчиков'], comments: ['комментарий', 'комментария', 'комментариев'], likes: ['отметка «Нравится»', 'отметки «Нравится»', 'отметок «Нравится»'] };
+const countWord = (n, forms) => forms[{ one: 0, few: 1, many: 2, other: 2 }[pluralRules.select(Number(n) || 0)]];
+const counted = (n, kind) => `${num(n)} ${countWord(n >= 10000 ? 0 : n, countForms[kind])}`;
+function updateCommentCount(delta) {
+  const count = document.querySelector('#comments-count');
+  const total = Math.max(0, Number(count.textContent) + delta);
+  count.textContent = total;
+  document.querySelector('#comments-label').textContent = countWord(total, countForms.comments);
+  if (currentVideo) currentVideo.comments = total;
+}
 const duration = seconds => `${Math.floor(seconds / 60)}:${String(Math.floor(seconds % 60)).padStart(2, '0')}`;
 const date = timestamp => new Date(timestamp * 1000).toLocaleDateString('ru-RU', { day: 'numeric', month: 'long', year: 'numeric' });
 function ago(timestamp) {
@@ -73,7 +84,7 @@ function card(v) {
     ${v.thumbnail ? `<img src="${esc(v.thumbnail)}" alt="" loading="lazy" decoding="async">` : ''}<span class="duration">${duration(v.duration)}</span></a>
     <div class="card-details"><a href="/channel/${enc(v.channel.handle)}" data-link aria-label="Канал ${esc(v.channel.name)}">${avatar(v.channel)}</a>
     <div class="card-copy"><h2 class="card-title"><a href="/watch/${enc(v.id)}" data-link>${esc(v.title)}</a></h2>
-    <div class="card-meta"><a class="channel-link" href="/channel/${enc(v.channel.handle)}" data-link>${esc(v.channel.name)}</a>${v.visibility === 'private' ? `<span class="card-lock" title="Приватное видео">${icon('lock')}</span>` : ''}<br>${num(v.views)} просмотров · ${ago(v.created_at)}</div></div></div></article>`;
+    <div class="card-meta"><a class="channel-link" href="/channel/${enc(v.channel.handle)}" data-link>${esc(v.channel.name)}</a>${v.visibility === 'private' ? `<span class="card-lock" title="Приватное видео">${icon('lock')}</span>` : ''}<br>${counted(v.views, 'views')} · ${ago(v.created_at)}</div></div></div></article>`;
 }
 function categoryChips() {
   return `<div class="topics" aria-label="Категории">${topics.map(t => `<button class="chip ${currentTopic === t ? 'selected' : ''}" data-action="topic" data-value="${esc(t)}">${t}</button>`).join('')}</div>`;
@@ -105,12 +116,12 @@ async function watchPage(id, token) {
   return `<div class="watch-layout"><section>
     <div class="player-wrap">${v.status === 'ready' ? `<video id="video-player" controls playsinline preload="metadata" poster="${esc(v.thumbnail || '')}" src="${esc(v.media)}" aria-label="${esc(v.title)}"></video>` : `<div class="player-message">${icon('play')}<strong>${esc(statusNames[v.status])}</strong><p>${esc(v.error || 'Готовим видео к просмотру. Это может занять несколько минут.')}</p></div>`}</div>
     <h1 class="watch-title">${esc(v.title)}</h1>
-    <div class="watch-actions"><div class="channel-row"><a href="/channel/${enc(v.channel.handle)}" data-link>${avatar(v.channel)}</a><div><a href="/channel/${enc(v.channel.handle)}" data-link><strong>${esc(v.channel.name)}</strong></a><span class="muted" id="subscriber-count">${num(channel.subscribers)} подписчиков</span></div>
+    <div class="watch-actions"><div class="channel-row"><a href="/channel/${enc(v.channel.handle)}" data-link>${avatar(v.channel)}</a><div><a href="/channel/${enc(v.channel.handle)}" data-link><strong>${esc(v.channel.name)}</strong></a><span class="muted" id="subscriber-count">${counted(channel.subscribers, 'subscribers')}</span></div>
     ${session.user?.id === v.channel.id ? `<a class="btn btn-neutral" href="/studio" data-link>Мои видео</a>` : `<button class="btn ${channel.subscribed ? 'btn-neutral' : 'btn-primary'}" data-action="subscribe" data-handle="${enc(v.channel.handle)}" data-subscribed="${channel.subscribed}">${channel.subscribed ? 'Вы подписаны' : 'Подписаться'}</button>`}</div>
-    <div class="watch-tools"><button class="btn btn-neutral" data-action="like" aria-pressed="${v.liked}">${icon('like')}<span>${num(v.likes)}</span></button><button class="btn btn-neutral" data-action="save">${icon('list')}Сохранить</button><button class="btn btn-neutral" data-action="share">${icon('share')}Поделиться</button><button class="icon-btn" data-action="report" aria-label="Пожаловаться на видео">${icon('flag')}</button></div></div>
+    <div class="watch-tools"><button class="btn btn-neutral" data-action="like" aria-label="Нравится" aria-describedby="likes-count" aria-pressed="${v.liked}">${icon('like')}<span id="likes-count">${num(v.likes)}</span></button><button class="btn btn-neutral" data-action="save">${icon('list')}Сохранить</button><button class="btn btn-neutral" data-action="share">${icon('share')}Поделиться</button><button class="icon-btn" data-action="report" aria-label="Пожаловаться на видео">${icon('flag')}</button></div></div>
     ${v.hidden ? `<div class="notice error-note" style="margin-top:16px">Видео скрыто модератором: ${esc(v.moderation_reason)}. Общий доступ закрыт; разрешения на приватное видео задаёт владелец.</div>` : ''}
-    <div class="description" id="description"><strong>${num(v.views)} просмотров · ${date(v.created_at)}${v.visibility === 'private' ? ' · Приватное видео' : ''}</strong><div class="description-text">${esc(v.description || 'Автор пока не добавил описание.')}</div><button class="text-button" data-action="description">Ещё</button></div>
-    <h2 class="comment-heading"><span id="comments-count">${v.comments}</span> комментариев</h2>
+    <div class="description" id="description"><strong>${counted(v.views, 'views')} · ${date(v.created_at)}${v.visibility === 'private' ? ' · Приватное видео' : ''}</strong><div class="description-text">${esc(v.description || 'Автор пока не добавил описание.')}</div><button class="text-button" data-action="description">Ещё</button></div>
+    <h2 class="comment-heading"><span id="comments-count">${v.comments}</span> <span id="comments-label">${countWord(v.comments, countForms.comments)}</span></h2>
     ${session.user ? `<form class="comment-form" data-form="comment">${avatar(session.user)}<div><textarea name="body" placeholder="Введите комментарий" aria-label="Текст комментария" maxlength="2000" required rows="1"></textarea><div class="form-error" role="alert"></div><div class="comment-submit"><button class="btn btn-blue">Оставить комментарий</button></div></div></form>` : `<div class="notice"><button class="text-button" data-action="login">Войдите</button>, чтобы оставить комментарий.</div>`}
     <div id="comments-list">${commentsHTML(comments.items)}</div>
     </section><aside class="recommendations" aria-label="Другие видео"><h2>Смотрите также</h2>${recommendations.items.filter(x => x.id !== id).slice(0, 10).map(card).join('')}</aside></div>`;
@@ -120,7 +131,7 @@ async function channelPage(handle, token) {
   if (token !== generation) return null;
   const u = r.channel, playlists = new URLSearchParams(location.search).get('tab') === 'playlists';
   document.title = `${u.name} — YouTube`;
-  return `<div class="channel-banner"><span>${esc(u.name)}</span></div><div class="channel-intro">${avatar(u, 'lg')}<div><h1>${esc(u.name)}</h1><div class="muted">@${esc(u.handle)} · ${num(r.subscribers)} подписчиков · ${r.videos.length} видео<br>${esc(u.description || 'Место для новых историй и интересных видео.')}</div>
+  return `<div class="channel-banner"><span>${esc(u.name)}</span></div><div class="channel-intro">${avatar(u, 'lg')}<div><h1>${esc(u.name)}</h1><div class="muted">@${esc(u.handle)} · ${counted(r.subscribers, 'subscribers')} · ${r.videos.length} видео<br>${esc(u.description || 'Место для новых историй и интересных видео.')}</div>
     ${session.user?.id === u.id ? '<button class="btn btn-neutral" data-action="edit-channel">Настроить канал</button>' : `<button class="btn ${r.subscribed ? 'btn-neutral' : 'btn-primary'}" data-action="subscribe" data-handle="${enc(u.handle)}" data-subscribed="${r.subscribed}">${r.subscribed ? 'Вы подписаны' : 'Подписаться'}</button>`}</div></div>
     <nav class="tabs" aria-label="Разделы канала"><a class="tab ${!playlists ? 'active' : ''}" href="/channel/${enc(u.handle)}" data-link>Видео</a><a class="tab ${playlists ? 'active' : ''}" href="/channel/${enc(u.handle)}?tab=playlists" data-link>Плейлисты</a></nav>
     ${playlists ? (r.playlists.length ? `<div class="video-grid">${r.playlists.map(playlistTile).join('')}</div>` : empty('Плейлистов пока нет', 'Автор ещё не создал плейлисты.', 'list')) : (r.videos.length ? `<div class="video-grid">${r.videos.map(card).join('')}</div>` : empty('Видео пока нет', 'Здесь появятся опубликованные видео канала.', 'play'))}`;
@@ -158,7 +169,7 @@ async function studioPage(token) {
   if (r.items.some(v => ['queued', 'processing', 'receiving'].includes(v.status))) routeTimer = setTimeout(() => renderRoute(false), 3000);
   return `<div class="studio-top"><h1>Мои видео</h1><a class="btn btn-blue" href="/upload" data-link>${icon('upload')}Загрузить видео</a></div>
     ${r.items.length ? r.items.map(v => `<article class="studio-item">${v.thumbnail ? `<a href="/watch/${enc(v.id)}" data-link><img class="studio-thumb" src="${esc(v.thumbnail)}" alt=""></a>` : `<div class="studio-thumb">${icon(v.status === 'failed' ? 'flag' : 'play')}</div>`}
-    <div class="studio-copy"><h2><a href="/watch/${enc(v.id)}" data-link>${esc(v.title)}</a></h2><span class="status ${v.status}">${esc(statusNames[v.status])}</span><span class="status">${icon(v.visibility === 'private' ? 'lock' : 'globe')}${v.visibility === 'private' ? 'Приватное' : 'Открытое'}</span>${v.hidden ? '<span class="status failed">Скрыто модератором</span>' : ''}<p class="row-note">${date(v.created_at)} · ${num(v.views)} просмотров · ${v.likes} отметок «Нравится»</p>${v.error ? `<p class="row-note error-note">${esc(v.error)}</p>` : ''}</div>
+    <div class="studio-copy"><h2><a href="/watch/${enc(v.id)}" data-link>${esc(v.title)}</a></h2><span class="status ${v.status}">${esc(statusNames[v.status])}</span><span class="status">${icon(v.visibility === 'private' ? 'lock' : 'globe')}${v.visibility === 'private' ? 'Приватное' : 'Открытое'}</span>${v.hidden ? '<span class="status failed">Скрыто модератором</span>' : ''}<p class="row-note">${date(v.created_at)} · ${counted(v.views, 'views')} · ${counted(v.likes, 'likes')}</p>${v.error ? `<p class="row-note error-note">${esc(v.error)}</p>` : ''}</div>
     <div class="studio-buttons"><button class="btn btn-neutral" data-action="edit-video" data-id="${enc(v.id)}">${icon('edit')}Изменить</button>${v.visibility === 'private' ? `<button class="btn btn-neutral" data-action="grants" data-id="${enc(v.id)}">${icon('lock')}Доступ</button>` : ''}${['failed', 'uploading'].includes(v.status) ? `<button class="btn btn-neutral" data-action="retry-upload" data-id="${enc(v.id)}">Загрузить файл</button>` : ''}<button class="icon-btn" data-action="delete-video" data-id="${enc(v.id)}" aria-label="Удалить видео">${icon('trash')}</button></div></article>`).join('') : empty('Снимите свою первую историю', 'Загрузите видео: оно появится здесь, а после обработки будет доступно для просмотра.', 'upload', '<a class="btn btn-blue" href="/upload" data-link>Загрузить видео</a>')}`;
 }
 async function moderationPage(token) {
@@ -262,7 +273,7 @@ async function action(name, button) {
     const r = await api(`/channels/${button.dataset.handle}/subscription`, { method: subscribed ? 'DELETE' : 'PUT' });
     button.dataset.subscribed = String(r.subscribed); button.textContent = r.subscribed ? 'Вы подписаны' : 'Подписаться';
     button.classList.toggle('btn-neutral', r.subscribed); button.classList.toggle('btn-primary', !r.subscribed);
-    const count = document.querySelector('#subscriber-count'); if (count) count.textContent = `${num(r.subscribers)} подписчиков`;
+    const count = document.querySelector('#subscriber-count'); if (count) count.textContent = counted(r.subscribers, 'subscribers');
     toast(r.subscribed ? 'Подписка оформлена' : 'Подписка отменена');
   } else if (name === 'like') {
     if (needLogin()) return;
@@ -289,7 +300,7 @@ async function action(name, button) {
   } else if (name === 'delete-comment') {
     await api(`/comments/${enc(id)}`, { method: 'DELETE' });
     currentComments = currentComments.filter(c => c.id !== id); document.querySelector('#comments-list').innerHTML = commentsHTML(currentComments);
-    document.querySelector('#comments-count').textContent = Number(document.querySelector('#comments-count').textContent) - 1;
+    updateCommentCount(-1);
     toast('Комментарий удалён');
   } else if (name === 'edit-video') {
     const v = studioVideos.find(v => v.id === id);
@@ -325,7 +336,7 @@ async function submitForm(form) {
     } else if (name === 'comment') {
       const r = await api(`/videos/${enc(currentVideo.id)}/comments`, { method: 'POST', data: values });
       currentComments.unshift(r); document.querySelector('#comments-list').innerHTML = commentsHTML(currentComments);
-      document.querySelector('#comments-count').textContent = Number(document.querySelector('#comments-count').textContent) + 1;
+      updateCommentCount(1);
       form.reset(); toast('Комментарий добавлен');
     } else if (name === 'upload' || name === 'retry-upload') {
       const file = form.elements.video.files[0];
