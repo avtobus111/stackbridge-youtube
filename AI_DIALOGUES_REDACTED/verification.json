@@ -1,0 +1,145 @@
+{
+  "verified_at": "2026-11-14T17:17:46.906931+00:00",
+  "jsonl_structure": "passed",
+  "record_counts_types_roles_timestamps": "preserved",
+  "known_private_values": "not found",
+  "residual_patterns": "no findings in checked patterns",
+  "full_originals": "preserved privately; excluded",
+  "files": [
+    {
+      "file": "main.redacted.jsonl",
+      "records": 4316,
+      "record_types_preserved": true,
+      "timestamps_preserved": true,
+      "known_private_values_absent": true,
+      "engineering_markers": [
+        {
+          "marker": "43 passed",
+          "original_occurrences": 84,
+          "redacted_occurrences": 73
+        },
+        {
+          "marker": "test_recovery",
+          "original_occurrences": 62,
+          "redacted_occurrences": 60
+        },
+        {
+          "marker": "check_db_reaping",
+          "original_occurrences": 185,
+          "redacted_occurrences": 169
+        },
+        {
+          "marker": "private",
+          "original_occurrences": 1097,
+          "redacted_occurrences": 1002
+        },
+        {
+          "marker": "ffmpeg",
+          "original_occurrences": 81,
+          "redacted_occurrences": 79
+        },
+        {
+          "marker": "uvicorn",
+          "original_occurrences": 171,
+          "redacted_occurrences": 166
+        },
+        {
+          "marker": "*** Begin Patch",
+          "original_occurrences": 149,
+          "redacted_occurrences": 132
+        }
+      ]
+    },
+    {
+      "file": "review-code.redacted.jsonl",
+      "records": 73,
+      "record_types_preserved": true,
+      "timestamps_preserved": true,
+      "known_private_values_absent": true,
+      "engineering_markers": [
+        {
+          "marker": "43 passed",
+          "original_occurrences": 0,
+          "redacted_occurrences": 0
+        },
+        {
+          "marker": "test_recovery",
+          "original_occurrences": 0,
+          "redacted_occurrences": 0
+        },
+        {
+          "marker": "check_db_reaping",
+          "original_occurrences": 0,
+          "redacted_occurrences": 0
+        },
+        {
+          "marker": "private",
+          "original_occurrences": 150,
+          "redacted_occurrences": 150
+        },
+        {
+          "marker": "ffmpeg",
+          "original_occurrences": 29,
+          "redacted_occurrences": 29
+        },
+        {
+          "marker": "uvicorn",
+          "original_occurrences": 9,
+          "redacted_occurrences": 9
+        },
+        {
+          "marker": "*** Begin Patch",
+          "original_occurrences": 0,
+          "redacted_occurrences": 0
+        }
+      ]
+    },
+    {
+      "file": "review-database.redacted.jsonl",
+      "records": 88,
+      "record_types_preserved": true,
+      "timestamps_preserved": true,
+      "known_private_values_absent": true,
+      "engineering_markers": [
+        {
+          "marker": "43 passed",
+          "original_occurrences": 0,
+          "redacted_occurrences": 0
+        },
+        {
+          "marker": "test_recovery",
+          "original_occurrences": 3,
+          "redacted_occurrences": 3
+        },
+        {
+          "marker": "check_db_reaping",
+          "original_occurrences": 81,
+          "redacted_occurrences": 81
+        },
+        {
+          "marker": "private",
+          "original_occurrences": 19,
+          "redacted_occurrences": 19
+        },
+        {
+          "marker": "ffmpeg",
+          "original_occurrences": 9,
+          "redacted_occurrences": 9
+        },
+        {
+          "marker": "uvicorn",
+          "original_occurrences": 6,
+          "redacted_occurrences": 6
+        },
+        {
+          "marker": "*** Begin Patch",
+          "original_occurrences": 0,
+          "redacted_occurrences": 0
+        }
+      ]
+    }
+  ],
+  "exhaustive_privacy_guarantee": false,
+  "source_code_changed": false,
+  "privacy_related_patch_omissions_reviewed": true
+}
